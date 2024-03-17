@@ -68,3 +68,40 @@
   background-color: #3D3D3D;
   border-radius:5px;
 }
+.group .inspired-overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 20px;
+}
+
+.group .inspired:hover .inspired-overlay {
+  opacity: 1;
+}
+
+.group .inspired-card {
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.group .inspired:hover .inspired-card:hover {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.group .inspired-card:hover .inspired-overlay {
+  opacity: 0;
+}
+
+.group .inspired:hover .inspired-card {
+  transform: scale(0.95);
+}
+.group .inspired-cards::-webkit-scrollbar {
+  height: 6px;
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+.group .inspired-cards::-webkit-scrollbar-thumb {
+  background-color: #3D3D3D;
+  border-radius: 5px;
+}
