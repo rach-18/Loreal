@@ -11,13 +11,13 @@
 <body class="bg-black h-full">
     <div class="text-[#4A4A4A] bg-white h-screen w-[28%]">
         <div class="px-6 h-full pt-14">
-            <ul class="times overflow-y-scroll h-[63%]">
-                <li class="flex justify-between items-center py-6 mt-3 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold"><p class="pl-4">Group</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></li>
-                <li class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold"><p class="pl-4">Commitments</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></li>
-                <li class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold"><p class="pl-4">Brands</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></li>
-                <li class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold"><p class="pl-4">Beauty Science & Technology</p><i class="fa-solid fa-chevron-right text-sm mx-2"></i></li>
-                <li class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold"><p class="pl-4">Career</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></li>
-            </ul>
+            <div class="times overflow-y-scroll h-[63%] flex flex-col">
+                <a href="#p" class="flex justify-between items-center py-6 mt-3 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Group</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Commitments</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Brands</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Beauty Science & Technology</p><i class="fa-solid fa-chevron-right text-sm mx-2"></i></a>
+                <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Career</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+            </div>
             <div class="text-xs font-bold px-20 mx-auto border-b border-b-[#EBEBEB] pb-5 pt-7 tracking-wider">
                 <a class="flex justify-evenly" href="#p">
                     <i class="fa-solid fa-arrow-trend-up text-base"></i> 
@@ -35,8 +35,22 @@
                     <a href="#p">Investors & Shareholders</a>
                 </div>
             </div>
-            <div>
-                
+            <div class="flex justify-between py-4 text-sm text-black">
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <p>Accessibility</p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>Location</p>
+                </div>
+                <div class="border border-black">
+                    <select name="lang" id="lang">
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
