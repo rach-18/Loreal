@@ -1,0 +1,70 @@
+
+.group_hero{
+  background-image: url(assets/herowho-are-we.webp);
+  background-size: cover;
+  background-position: center;
+}
+.group .linear_gradient{
+  background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, transparent 20%, transparent 43%, rgba(0, 0, 0, .5));
+  height: 90vh;
+}
+.group .font-serif{
+  font-family: Halesworth,Times New Roman,Times,serif;
+}
+.group .font{
+  font-family: "Helvetica Now Display", Arial, Helvetica, sans-serif;
+} 
+@font-face {
+  font-family: "Velocity - DEMO";
+  src: url("https://db.onlinewebfonts.com/t/14e13162e72ceb6e34ad33726fce5620.eot");
+  src: url("https://db.onlinewebfonts.com/t/14e13162e72ceb6e34ad33726fce5620.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/14e13162e72ceb6e34ad33726fce5620.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/14e13162e72ceb6e34ad33726fce5620.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/14e13162e72ceb6e34ad33726fce5620.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/14e13162e72ceb6e34ad33726fce5620.svg#Velocity - DEMO")format("svg");
+}
+.group .velocity {
+  font-family: "Velocity - DEMO";
+}
+.group .shadow{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.group .gradient{
+  filter: brightness(80%)
+}
+.group .cards-overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+}
+
+.group .cards:hover .cards-overlay {
+  opacity: 1;
+}
+
+.group .cards-card {
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.group .cards:hover .cards-card:hover {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.group .cards-card:hover .cards-overlay {
+  opacity: 0;
+}
+
+.group .cards:hover .cards-card {
+  transform: scale(0.95);
+}
+.group .cards-cards::-webkit-scrollbar {
+  height: 6px;
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+.group .cards-cards::-webkit-scrollbar-thumb {
+  background-color: #3D3D3D;
+  border-radius:5px;
+}
