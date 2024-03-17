@@ -1,0 +1,112 @@
+html{
+    overflow-x: hidden;
+}
+#Hero{
+    background-image: linear-gradient(180deg,rgba(0,0,0,.5) 0,transparent 20%,transparent 43%,rgba(0,0,0,.5)),url("https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/career-hero.jpg?rev=08fc60eb19a54a9da51d16a7a2451e69&cx=0.53&cy=0.33&cw=1920&ch=800&blr=False&hash=70D1B20068A18CE0B307A89BEEBE6E64");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 87vh;
+    width: 100vw;
+}
+#hero_heading{
+    padding-top: 55vh;
+    padding-left: 10vw;
+    color: aliceblue;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#search_bar{
+    margin-top: -47px;
+}
+#search_top{
+    background-color: rgb(252, 252, 252);
+    width: 50vw;
+    height: 50px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(99, 99, 99);
+    font-family: 'Times New Roman', Times, serif;
+}
+.search_bottom{
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 50px;
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding-left: 30px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.search-box_input{
+    width: 30vw;
+    height: 46px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0px 0px 0px 15px;
+    padding: 10px;
+    font-size: large;
+    padding-left: 25px;
+}
+::placeholder{
+    color: rgb(196, 196, 196);
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.search-box_submit{
+    width: 20vw;
+    height: 46px;
+    background-color: rgb(206, 192, 176);
+    border: none;
+    border-radius: 0px 0px 15px 0px;
+    font-size: large;
+    color: rgb(99, 99, 99);
+}
+.discover-overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+.discover:hover .discover-overlay {
+    opacity: 1;
+}
+
+.discover-card {
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.discover:hover .discover-card:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.discover-card:hover .discover-overlay {
+    opacity: 0;
+}
+
+.discover:hover .discover-card {
+    transform: scale(0.95);
+}
+.discover-cards::-webkit-scrollbar {
+    height: 6px;
+    background-color: #aaa;
+    border-radius: 5px;
+}
+
+.discover-cards::-webkit-scrollbar-thumb {
+    background-color: #3D3D3D;
+    border-radius: 5px;
+    cursor: pointer;
+}
