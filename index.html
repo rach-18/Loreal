@@ -16,27 +16,73 @@
     <!-- <link href="https://db.onlinewebfonts.com/c/14e13162e72ceb6e34ad33726fce5620?family=Velocity+-+DEMO" rel="stylesheet"> -->
     <title>Loreal Home Page</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header class="text-white h-screen w-screen">
-        <div id="hero" class="w-full relative">            
+        <div id="hero" class="w-full 2xl:h-full h-[90%] relative">            
             <div class="img-overlay w-full h-full absolute top-0 left-0"></div>
             <img class="hero-img w-full h-full object-cover absolute top-0 left-0" src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/art-of-fragrances/header-art-of-fragrances.jpg?rev=61ffae46966c44aa931a5c7a326985f2&cx=0.49&cy=0.47&cw=1920&ch=800&blr=False&hash=671442CEE9F5BCCA19BDE88D9FB707FA" alt="">
             <nav class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-50 hover:bg-white hover:text-[#3d3d3d] transition-all duration-300">
-                <div class="text-2xl">
+                <button id="hamburger-btn" class="text-2xl">
                     <i class="fa-solid fa-bars"></i>
-                </div>
+                </button>
                 <div class="flex flex-col items-center">
                     <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
                     <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
                 </div>
                 <div></div>
             </nav>
-            <div class="flex flex-col top-[50%] pl-32 w-1/2 absolute z-10 ">
-                <h1 class="times text-5xl font-medium tracking-widest pb-5">The Art & Science of Fragrance</h1>
-                <a class="text-[#3D3D3D] no-underline text-[#3d3d3d] bg-white w-[65%] px-5 py-1 rounded-full hover:text-white hover:bg-[#3D3D3D] transition-all duration-300" href="https://www.loreal.com/en/">A discovery journey in our world of fragnances</a>
+            <div id="menu" class="text-[#4A4A4A] bg-white h-screen w-[28%] absolute top-0 left-0 hidden z-[70]">
+                <div class="px-6 h-full pt-14">
+                    <div class="times overflow-y-scroll h-[63%] flex flex-col">
+                        <a href="#p" class="flex justify-between items-center py-6 mt-3 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Group</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                        <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Commitments</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                        <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Brands</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                        <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Beauty Science & Technology</p><i class="fa-solid fa-chevron-right text-sm mx-2"></i></a>
+                        <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Career</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                    </div>
+                    <div class="text-xs font-bold px-20 mx-auto border-b border-b-[#EBEBEB] pb-5 pt-7 tracking-wider">
+                        <a class="flex justify-evenly" href="#p">
+                            <i class="fa-solid fa-arrow-trend-up text-base"></i> 
+                            <p>OR.PA</p>
+                            <p class="text-[#c4c4c4]">€ 446.15</p>
+                            <p>-1.13%</p>
+                        </a>
+                    </div>
+                    <div class="flex flex-col items-center text-sm font-bold border-b border-b-[#EBEBEB] py-4">
+                        <div class="flex justify-between w-full px-12 mb-2">
+                            <a href="#p">Journalists</a>
+                            <a href="#p">Suppliers</a>
+                        </div>
+                        <div>
+                            <a href="#p">Investors & Shareholders</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between py-4 text-sm text-black">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <p>Accessibility</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-globe"></i>
+                            <p>Location</p>
+                        </div>
+                        <div class="border border-black">
+                            <select name="lang" id="lang">
+                                <option value="en">EN</option>
+                                <option value="fr">FR</option>
+                                <option value="zh">ZH</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="absolute bottom-[-25px] w-full">
-                <form class="shadow-2xl bg-white w-[50%] mx-auto flex flex-col items-center pt-3 rounded-2xl" action="">
+            <div id="overlay" class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[60]"></div>
+            <div class="flex flex-col 2xl:top-[60%] top-[50%] 2xl:pl-32 pl-20 2xl:w-full w-[60%] absolute z-10 ">
+                <h1 class="times 2xl:text-6xl text-5xl font-medium tracking-widest pb-5">The Art & Science of Fragrance</h1>
+                <a class="text-[#3D3D3D] no-underline text-[#3d3d3d] bg-white 2xl:w-[25.5%] w-[70%] px-5 py-1 rounded-full hover:text-white hover:bg-[#3D3D3D] transition-all duration-300" href="https://www.loreal.com/en/">A discovery journey in our world of fragnances</a>
+            </div>
+            <div class="absolute bottom-[-52px] w-full z-20">
+                <form class="shadow-2xl bg-white 2xl:w-[60%] w-[50%] mx-auto flex flex-col items-center pt-3 rounded-2xl" action="">
                     <p class="text-[#3d3d3d] times text-2xl tracking-wider">Find out more about L'Oréal</p>
                     <div class="flex border-t border-[#cdc4ba] w-full text-lg">
                         <input class="arial tracking-wider w-full px-10 text-[#cdc4ba] rounded-bl-2xl" type="text" placeholder="Define your search...">
@@ -93,8 +139,8 @@
         </div>
     </div>
     <div id="brand" class="text-white relative h-full">
-        <img class="absolute z-[-1]" src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/hero-images/optimized-brand-hero/kerastase.jpg?rev=43028eda2ad74f00818bc805f60858d8&cx=0.61&cy=0.38&cw=1370&ch=760&blr=False&hash=CBCE241D7E5FA2CA7AB5CBC928B47530" alt="">
-        <div class="brand-gradient w-1/2 h-[748px] pl-36 pt-7 pb-40 pr-10 flex flex-col justify-between">
+        <img class=" z-[-1] w-full" src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/hero-images/optimized-brand-hero/kerastase.jpg?rev=43028eda2ad74f00818bc805f60858d8&cx=0.61&cy=0.38&cw=1370&ch=760&blr=False&hash=CBCE241D7E5FA2CA7AB5CBC928B47530" alt="">
+        <div class="brand-gradient w-1/2 h-full pl-36 pt-7 pb-40 pr-10 flex flex-col justify-between absolute top-0">
             <div>
                 <p class="times font-semibold text-lg">Focus On</p>
                 <p class="font-semibold text-4xl my-1">Kérastase</p>
@@ -110,9 +156,34 @@
                 <li class="my-1.5 text-[#cdc4ba] transition-all duration-300 hover:text-white"><a href="#p">Dermatological Beauty Division</a></li>
             </ul>
         </div>
+        <div class="carousel flex justify-center gap-6 items-center text-[#3D3D3D] absolute bottom-0 backdrop-blur-lg w-full py-5 border-t border-t-[#686A6C]">
+            <div class="flex items-center justify-center text-xl bg-white h-16 w-16 rounded-full hover:cursor-pointer">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="flex gap-5">
+                <div class="bg-white py-8 w-24 h-24 rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer transition-all duration-300">
+                    <img src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/brands-logo/vecto-luxe/yuesai.svg?rev=f6a311b18b2b4320b8d79b2555491d84" alt="">
+                </div>
+                <div class="bg-white py-8 w-24 h-24 rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer transition-all duration-300">
+                    <img src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/brands-logo/vector-ppd/loreal-pro-logo-2021-v2.svg?rev=f9a9d186f7754458be1e0e4227c9ed60" alt="">
+                </div>
+                <div class="bg-white py-8 w-24 h-24 rounded-full hover:cursor-pointer">
+                    <img src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/brands-logo/vector-ppd/kerastase-logo.svg?rev=96a5223d34cc49b796bb9673249f02b4" alt="">
+                </div>
+                <div class="bg-white py-8 w-24 h-24 rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer transition-all duration-300">
+                    <img src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/brands-logo/vector-ppd/matrix-logo.svg?rev=0aa39fe973964bf497704f0d7bcc3e70" alt="">
+                </div>
+                <div class="bg-white py-8 w-24 h-24 rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer transition-all duration-300">
+                    <img src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/brands-logo/vector-ppd/redken-logo.svg?rev=f97f6ddbc4e544809ff06abda25e6ba9" alt="">
+                </div>
+            </div>
+            <div class="flex items-center justify-center text-xl bg-white h-16 w-16 rounded-full hover:cursor-pointer">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
     </div>
     <div id="discover" class="flex text-[#3D3D3D] pb-28">
-        <div class="w-[45%] px-10 ml-20 mt-20">
+        <div class="w-[50%] px-10 ml-20 mt-20">
             <p class="times tracking-wide font-semibold">Discover</p>
             <h2 class="text-4xl font-semibold tracking-wider my-5 leading-9">Our latest news</h2>
             <ul class="mt-14">
@@ -205,6 +276,23 @@
 
         </div>
     </footer>
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <nav class="mx-20 flex text-[#3D3D3D80] font-thin items-center">
+            <a class="cursor-pointer ps-5 text-sm">Cookie settings</a>
+            <a class="cursor-pointer  ps-8 text-sm">Term of use</a>
+            <a class="cursor-pointer  ps-8 text-sm">Privcy Policy</a>
+            <a class="cursor-pointer  ps-8 text-sm">Our Policies around the World</a>
+            <a class=" ps-8 text-sm">|</a>
+            <a class="cursor-pointer  ps-8 text-sm pe-40">Accessibility assessment</a>
+            <div class="flex text-[#3D3D3D] items-center mt-2">
+                <a href="#" class=" fab fa-facebook-f social_fb hover:bg-[#3D3D3D] hover:text-[#DBD9D6] "></a>
+                <a href="#" class="social fab fa-twitter text-md hover:bg-[#3D3D3D] hover:text-[#DBD9D6]"></a>
+                <a href="#" class="social fab fa-square-instagram text-md hover:bg-[#3D3D3D] hover:text-[#DBD9D6]"></a>
+                <a href="#" class="social fab fa-linkedin-in hover:bg-[#3D3D3D] hover:text-[#DBD9D6]"></a>
+                <a href="#" class="fab fa-youtube social hover:bg-[#3D3D3D] hover:text-[#DBD9D6]"></a>
+            </div>
+        </nav>
+    </footer>
 </body>
 <script>
     document.addEventListener('scroll', () => {
@@ -217,5 +305,35 @@
             nav.classList.remove('scrolled');
         }
     });
+
+    document.getElementById('hamburger-btn').addEventListener('click', function() {
+        toggleMenu();
+    });
+
+    document.getElementById('overlay').addEventListener('click', function() {
+        toggleMenu();
+    });
+
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        var overlay = document.getElementById('overlay');
+        var body = document.body;
+        var navbar = document.querySelector('.navbar');
+
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden'); // Show menu
+            overlay.classList.remove('hidden'); // Show overlay
+            body.classList.add('no-scroll'); // Disable scrolling
+            navbar.classList.add('menu-open'); // Add class to navbar
+        } else {
+            menu.classList.add('hidden'); // Hide menu
+            overlay.classList.add('hidden'); // Hide overlay
+            body.classList.remove('no-scroll'); // Enable scrolling
+            navbar.classList.remove('menu-open'); // Remove class from navbar
+        }
+    }
+
+
+
 </script>
 </html>

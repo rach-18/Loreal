@@ -8,9 +8,34 @@ body {
     font-family: "Helvetica Now Display", Arial, Helvetica, sans-serif;
 }
 
-#hero {
+/* #hero {
     height: 86%;
+} */
+
+#menu {
+    transition: left 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto; /* Allow scrolling within the menu */
+    /* z-index: 50; */
 }
+
+.navbar.menu-open:hover {
+    /* Override hover styles when menu is open */
+    background-color: transparent;
+    color: white;
+}
+
+#overlay {
+    transition: opacity 0.3s ease;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 
 .navbar.scrolled {
     background-color: white;
@@ -89,4 +114,22 @@ body {
 
 .discover:hover .discover-card {
     transform: scale(0.95);
+}
+
+.carousel {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social{ 
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: #DBD9D6;
+}
+
+.social_fb{ 
+    margin-right: 20px;
+    padding: 15px 17px;
+    border-radius: 100%;
+    background-color: #DBD9D6;
 }
