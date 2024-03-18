@@ -1,78 +1,93 @@
-html{
+html,body{
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
-#Hero{
-    background-image: linear-gradient(180deg,rgba(0,0,0,.5) 0,transparent 20%,transparent 43%,rgba(0,0,0,.5)),url("https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/career-hero.jpg?rev=08fc60eb19a54a9da51d16a7a2451e69&cx=0.53&cy=0.33&cw=1920&ch=800&blr=False&hash=70D1B20068A18CE0B307A89BEEBE6E64");
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 87vh;
-    width: 100vw;
+#menu {
+    transition: left 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto; /* Allow scrolling within the menu */
+    /* z-index: 50; */
 }
-#hero_heading{
-    padding-top: 55vh;
-    padding-left: 10vw;
-    color: aliceblue;
-    font-size: 60px;
-    font-family: 'Times New Roman', Times, serif;
-}
-#search_bar{
-    margin-top: -47px;
-}
-#search_top{
-    background-color: rgb(252, 252, 252);
-    width: 50vw;
-    height: 50px;
-    border-radius: 15px 15px 0 0;
-    text-align: center;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: rgb(99, 99, 99);
-    font-family: 'Times New Roman', Times, serif;
-}
-.search_bottom{
-    background-color:rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50vw;
-    height: 50px;
-    border-radius: 0px 0px 15px 15px;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    padding-left: 30px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
 
+.navbar.menu-open:hover {
+    /* Override hover styles when menu is open */
+    background-color: transparent;
+    color: white;
 }
-.search-box_input{
-    width: 30vw;
-    height: 46px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 0px 0px 0px 15px;
-    padding: 10px;
-    font-size: large;
-    padding-left: 25px;
+
+#overlay {
+    transition: opacity 0.3s ease;
 }
-::placeholder{
-    color: rgb(196, 196, 196);
+
+.no-scroll {
+    overflow: hidden;
 }
-textarea:focus, input:focus{
-    outline: none;
+
+
+.navbar.scrolled {
+    background-color: white;
+    color: #3d3d3d;
+    border-bottom: 0.5px solid #c4c4c4;
 }
-.search-box_submit{
-    width: 20vw;
-    height: 46px;
-    background-color: rgb(206, 192, 176);
-    border: none;
-    border-radius: 0px 0px 15px 0px;
-    font-size: large;
-    color: rgb(99, 99, 99);
+
+.img-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6));
+    z-index: -1;
 }
+
+.hero-img {
+    z-index: -2;
+}
+
+#logo {
+    font-family: "Gomme Sans W04 Regular";
+}
+
+#sub-logo {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.4rem;
+    font-size: 0.6rem;
+}
+
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social{ 
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: #DBD9D6;
+}
+
+.social_fb{ 
+    margin-right: 20px;
+    padding: 15px 17px;
+    border-radius: 100%;
+    background-color: #DBD9D6;
+}
+
+footer .social{ 
+    margin-right: 15px;
+    padding: 14px;
+    border-radius: 100%;
+    background-color: #DBD9D6;
+  }
+  
+  footer .social_fb{ 
+    padding: 15px 17px;
+    border-radius: 100%;
+    background-color: #DBD9D6;
+  }
+
 .discover-overlay {
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0;
@@ -109,4 +124,37 @@ textarea:focus, input:focus{
     background-color: #3D3D3D;
     border-radius: 5px;
     cursor: pointer;
+}
+@media screen and (max-width: 320px){
+    #search_bar{
+        margin-top: -30px;
+    }
+    #search_top{
+        width: 70vw;
+        height: 30px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        font-size: 10px;
+    }
+    .search_bottom{
+        width: 70vw;
+        height: 30px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        font-size: 12px;
+    }
+    .search-box_input{
+        width: 55vw;
+        height: 30px;
+        padding: 10px;
+        font-size: smaller;
+    }
+    .search-box_submiticon{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        height: 30px;
+    }
 }
