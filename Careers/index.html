@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -184,55 +185,6 @@
         </div>
       </div>
     </header>
-
-    <script>
-      document.addEventListener("scroll", () => {
-        const nav = document.querySelector(".navbar");
-        if (window.scrollY > 0) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
-        }
-      });
-
-      // Function to toggle menu and overlay
-      function toggleMenu() {
-        const menu = document.getElementById("menu");
-        const overlay = document.getElementById("overlay");
-        const body = document.body;
-        const navbar = document.querySelector(".navbar");
-
-        menu.classList.toggle("hidden");
-        overlay.classList.toggle("hidden");
-        // Toggle body scrolling
-        body.classList.toggle("no-scroll");
-        // Toggle menu-open class on navbar
-        navbar.classList.toggle("menu-open");
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const menu = document.getElementById("menu");
-        const overlay = document.getElementById("overlay");
-        const closeMenuBtn = document.getElementById("closeMenu");
-
-        // Event listener for hamburger button
-        document
-          .getElementById("hamburger-btn")
-          .addEventListener("click", toggleMenu);
-
-        // Event listener for overlay
-        overlay.addEventListener("click", toggleMenu);
-
-        // Event listener for close menu button
-        if (closeMenuBtn) {
-          closeMenuBtn.addEventListener("click", function () {
-            toggleMenu();
-            // Hide the overlay
-            overlay.classList.add("hidden");
-          });
-        }
-      });
-    </script>
 
     <!-- Main -->
 
@@ -942,4 +894,56 @@
       </div>
     </footer>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener("scroll", () => {
+      const nav = document.querySelector(".navbar");
+      if (window.scrollY > 0) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    // Function to toggle menu and overlay
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      const overlay = document.getElementById("overlay");
+      const body = document.body;
+      const navbar = document.querySelector(".navbar");
+
+      menu.classList.toggle("hidden");
+      overlay.classList.toggle("hidden");
+      // Toggle body scrolling
+      body.classList.toggle("no-scroll");
+      // Toggle menu-open class on navbar
+      navbar.classList.toggle("menu-open");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const menu = document.getElementById("menu");
+      const overlay = document.getElementById("overlay");
+      const closeMenuBtn = document.getElementById("closeMenu");
+
+      // Event listener for hamburger button
+      document
+        .getElementById("hamburger-btn")
+        .addEventListener("click", toggleMenu);
+
+      // Event listener for overlay
+      overlay.addEventListener("click", toggleMenu);
+
+      // Event listener for close menu button
+      if (closeMenuBtn) {
+        closeMenuBtn.addEventListener("click", function () {
+          toggleMenu();
+          // Hide the overlay
+          overlay.classList.add("hidden");
+        });
+      }
+    });
+  </script>
 </html>
