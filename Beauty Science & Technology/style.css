@@ -1,0 +1,24 @@
+.focus-overlay{
+    background-color:rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+.focus:hover .focus-overlay {
+    opacity: 1;
+}
+.focus-card{
+    transition: all;
+    transition-duration: 300ms;
+}
+.focus:hover .focus-card:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+.focus-card:hover .focus-overlay {
+    opacity: 0;
+}
+.focus:hover .focus-card {
+    transform: scale(0.95);
+}
+body {
+    font-family: Roboto, sans-serif;
+}
