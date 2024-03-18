@@ -7,10 +7,10 @@
       L’Oréal Groupe - Freedom to Go beyond, That’s the Beauty of L’Oréal
     </title>
     <link rel="icon" type="image/x-icon" href="o-solid.svg" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/42038edb06.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -19,6 +19,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/0f9e72426345e4f7fd0fa8ca9f8a309e?family=Gomme+Sans+W04+Regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/0976a2619014c5855690b7509fab4c6e?family=Helvetica+Now+Display"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -186,6 +200,58 @@
       </div>
     </header>
 
+<<<<<<< HEAD
+=======
+    <!-- <script>
+      document.addEventListener("scroll", () => {
+        const nav = document.querySelector(".navbar");
+        if (window.scrollY > 0) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      // Function to toggle menu and overlay
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay");
+        const body = document.body;
+        const navbar = document.querySelector(".navbar");
+
+        menu.classList.toggle("hidden");
+        overlay.classList.toggle("hidden");
+        // Toggle body scrolling
+        body.classList.toggle("no-scroll");
+        // Toggle menu-open class on navbar
+        navbar.classList.toggle("menu-open");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay");
+        const closeMenuBtn = document.getElementById("closeMenu");
+
+        // Event listener for hamburger button
+        document
+          .getElementById("hamburger-btn")
+          .addEventListener("click", toggleMenu);
+
+        // Event listener for overlay
+        overlay.addEventListener("click", toggleMenu);
+
+        // Event listener for close menu button
+        if (closeMenuBtn) {
+          closeMenuBtn.addEventListener("click", function () {
+            toggleMenu();
+            // Hide the overlay
+            overlay.classList.add("hidden");
+          });
+        }
+      });
+    </script> -->
+
+>>>>>>> 5ce865c19ffb7581bb35834faaf3d5b0693e5538
     <!-- Main -->
 
     <div class="flex-col max-w-full pt-10">
@@ -214,7 +280,7 @@
             Explore
           </p>
           <h2
-            class="text-4xl text-[#3d3d3d] font-semibold tracking-wider my-5 leading-9 lg:text-3xl"
+            class="text-4xl text-[#3d3d3d] font-[Helvetica_Now_Display] font-semibold tracking-wider my-5 leading-9 lg:text-3xl"
           >
             Getting hired at L’Oréal
           </h2>
@@ -894,10 +960,13 @@
       </div>
     </footer>
   </body>
+<<<<<<< HEAD
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+=======
+>>>>>>> 5ce865c19ffb7581bb35834faaf3d5b0693e5538
   <script>
     document.addEventListener("scroll", () => {
       const nav = document.querySelector(".navbar");
