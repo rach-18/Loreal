@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://db.onlinewebfonts.com/c/14e13162e72ceb6e34ad33726fce5620?family=Velocity+-+DEMO" rel="stylesheet">
     
+    <link href="https://db.onlinewebfonts.com/c/0f9e72426345e4f7fd0fa8ca9f8a309e?family=Gomme+Sans+W04+Regular" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,6 +21,72 @@
 </head>
 <body>
     <div id="container_wrapper" class="w-full">
+        <!----------------------------------------------------Header-section-------------------------------------------------->
+        <header class="text-white w-screen">
+            <div id="hero" class="w-full relative">            
+                <div class="img-overlay w-full h-full absolute top-0 left-0"></div>
+                <nav class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-50 hover:bg-white hover:text-[#3d3d3d] transition-all duration-300">
+                    <button id="hamburger-btn" class="text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="flex flex-col items-center">
+                        <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+                        <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+                    </div>
+                    <div></div>
+                </nav>
+                <div id="menu" class="text-[#4A4A4A] bg-white h-screen xl:w-[28%] lg:w-[40%] md:w-[50%] w-full absolute top-0 left-0 hidden z-[70]">
+                    <button id="closeMenu" class="absolute top-0 left-0 p-4 md:hidden block">
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
+                        <i class="fa-solid fa-times text-gray-500 text-2xl"></i>
+                    </button>
+                    <div class="px-6 h-full pt-14">
+                        <div class="times overflow-y-scroll h-[63%] flex flex-col">
+                            <a href="../Group/index.html" class="flex justify-between items-center py-6 mt-3 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Group</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                            <a href="index.html" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Commitments</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                            <a href="../Brand/branc_index.html" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Brands</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                            <a href="../Beauty Science & Technology/index.html" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Beauty Science & Technology</p><i class="fa-solid fa-chevron-right text-sm mx-2"></i></a>
+                            <a href="../Careers/index.html" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Career</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                        </div>
+                        <div class="text-xs font-bold px-20 mx-auto border-b border-b-[#EBEBEB] pb-5 pt-7 tracking-wider">
+                            <a class="flex justify-evenly" href="#p">
+                                <i class="fa-solid fa-arrow-trend-up text-base"></i> 
+                                <p>OR.PA</p>
+                                <p class="text-[#c4c4c4]">€ 446.15</p>
+                                <p>-1.13%</p>
+                            </a>
+                        </div>
+                        <div class="flex flex-col items-center text-sm font-bold border-b border-b-[#EBEBEB] py-4">
+                            <div class="flex justify-between w-full px-12 mb-2">
+                                <a href="#p">Journalists</a>
+                                <a href="#p">Suppliers</a>
+                            </div>
+                            <div>
+                                <a href="#p">Investors & Shareholders</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between py-4 text-sm text-black">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                                <p>Accessibility</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-globe"></i>
+                                <p>Location</p>
+                            </div>
+                            <div class="border border-black">
+                                <select name="lang" id="lang">
+                                    <option value="en">EN</option>
+                                    <option value="fr">FR</option>
+                                    <option value="zl">ZH</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay" class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[69]"></div>
+            </div>
+        </header>
         <!----------------------------------------------------home------------------------------------------------------------>
         <section id="Commitments" class=" bg-[url(image/download.webp)] brightness-90 bg-cover bg-no-repeat pt-80 pb-16 ">
             <div class="md:flex sm:flex lg:px-28 md:px-14 sm:px-14 px-6">
@@ -38,7 +109,7 @@
                     <h3 class="text-[#3d3d3d] font-['Helvetica_Now_Display'] lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold my-4">Striving Towards An Ever More Responsible & Sustainable Business Model</h3>
                     <p class="text-[#3d3d3d] font-['Helvetica_Now_Display'] text-base">Our commitments focus on three key areas - the planet, the people, our products – with multiple initiatives and day-to-day actions to achieve our goals. Because we committed to do everything in our power to be exemplary.</p>
                 </div>
-                <div class="loreal-cards lg:w-[68%] relative md:w-[68%] sm:w-full grid grid-flow-col gap-4 overflow-x-scroll text-white font-bold text-center px-4 pt-8 pb-12">
+                <div class="loreal-cards relative lg:w-[68%]  md:w-[68%] sm:w-full grid grid-flow-col gap-4 overflow-x-scroll text-white font-bold text-center px-4 pt-8 pb-12">
                     <div class="loreal-cards-discover w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url(image/for-the-planet-card.jpg)] brightness-90 bg-right shadow-2xl rounded-2xl flex items-end justify-center px-4 cursor-pointer">
                         <div class="overlay absolute top-0 left-0 w-full h-full z-10 transition-all duration-300"></div>
                         <p class="lg:pb-16 md:pb-16 sm:pb-10 pb-10 lg:text-2xl md:text-2xl sm:text-lg text-lg font-['Times_New_Roman']"><a href="">For The Planet</a></p>
@@ -87,7 +158,6 @@
                     <p class="text-[#3d3d3d] font-['Helvetica_Now_Display'] text-base">Very early on, L’Oréal became aware of the urgent need to address the challenges arising from the global environmental crisis. Find out more about our achievements and our targets for 2030.</p>
                 </div>
                 <div class="loreal-cards relative lg:w-[68%] md:w-[68%] sm:w-full grid grid-flow-col gap-4 overflow-x-scroll text-white font-bold text-center px-4 pt-8 pb-12">
-                   
                     <div class="loreal-cards-discover w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url(image/loreal0283603md-card.webp)] bg-right shadow-2xl rounded-2xl flex items-end cursor-pointer">
                         <div class="overlay absolute top-0 left-0 w-full h-full z-10 transition-all duration-300"></div>
                         <div class=" mb-6 z-20">
@@ -198,6 +268,101 @@
                 </div>
             </div>
         </section>
+        <!----------------------------------------------------footer-section-------------------------------------------------->
+        <footer class="xl:px-0 px-10 w-full">
+            <div class="xl:px-32 px-0 py-10 border-y border-y-[#C4C4C4] xl:flex xl:justify-between">
+                <div class="mb-8 flex flex-col">
+                    <div class="flex justify-start">
+                        <div class="flex flex-col items-center">
+                            <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+                            <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="../Group/index.html">Group</a></li>
+                            <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="index.html">Commitments</a></li>
+                            <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="../Brand/branc_index.html">Brands</a></li>
+                            <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="../Beauty Science & Technology/index.html">Beauty Science</a></li>
+                            <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="../Careers/index.html">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap xl:gap-5 justify-between xl:border-b-0 xl:border-t-0 border-t border-b border-t-[#C4C4C4] border-b-[#C4C4C4] xl:py-0 py-5 xl:font-normal font-bold text-[0.9rem]">
+                        <li><a href="#p">Journalists</a></li>
+                        <li><a href="#p">Suppliers</a></li>
+                        <li><a href="#p">Investors & Shareholders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-[#B3B3B3]"></div>
+        </footer>
+            <div class="bg-[#9a9a9a] w-full h-[0.5px]"></div>
+        <footer class="bg-white md:flex md:items-center md:justify-between p-4 md:p-6 xl:p-8 my-3">
+            <ul class="flex items-center flex-wrap mb-6 md:mb-0 justify-center">
+              <li><a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Cookie Policy</a></li>
+              <li><a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Terms of use</a></li>
+              <li><a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Privacy Policy</a></li>
+              <li><a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Our Policies around the world</a></li>
+              <li><a href="#"class="lg:text-sm text-xs hidden lg:block font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">|</a></li>
+              <li><a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline">Accessbility assessment</a></li>
+            </ul>
+            <div class="flex justify-center space-x-6">
+              <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-facebook-f social_fb"></a>
+              <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-twitter social"></a>
+              <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-instagram-square social"></a>
+              <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-linkedin-in social"></a>
+              <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-youtube social"></a>
+            </div>
+        </footer>
     </div>
 </body>
+<script>
+    document.addEventListener('scroll', () => {
+        const nav = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    // Function to toggle menu and overlay
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+        const body = document.body;
+        const navbar = document.querySelector('.navbar');
+
+        menu.classList.toggle('hidden');
+        overlay.classList.toggle('hidden');
+        // Toggle body scrolling
+        body.classList.toggle('no-scroll');
+        // Toggle menu-open class on navbar
+        navbar.classList.toggle('menu-open');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+        const closeMenuBtn = document.getElementById('closeMenu');
+
+        // Event listener for hamburger button
+        document.getElementById('hamburger-btn').addEventListener('click', toggleMenu);
+
+        // Event listener for overlay
+        overlay.addEventListener('click', toggleMenu);
+
+        // Event listener for close menu button
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', function () {
+                toggleMenu();
+                // Hide the overlay
+                overlay.classList.add('hidden');
+            });
+        }
+    });
+
+</script>
 </html>
