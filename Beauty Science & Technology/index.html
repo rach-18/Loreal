@@ -17,164 +17,241 @@
       href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://db.onlinewebfonts.com/c/0f9e72426345e4f7fd0fa8ca9f8a309e?family=Gomme+Sans+W04+Regular"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="style.css">
     <title>Beauty Science & Technology</title>
 </head>
 <body>
+    
     <div class="wrapper">
+        <!--part 1-->
+        <header class="text-white w-screen">
+            <div id="hero" class="w-full relative">            
+                <div class="img-overlay w-full h-full absolute top-0 left-0"></div>
+                
+                <nav class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-50 hover:bg-white hover:text-[#3d3d3d] transition-all duration-300">
+                    <button id="hamburger-btn" class="text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="flex flex-col items-center">
+                        <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+                        <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+                    </div>
+                    <div></div>
+                </nav>
+                <div id="menu" class="text-[#4A4A4A] bg-white h-screen xl:w-[28%] lg:w-[40%] md:w-[50%] w-full absolute top-0 left-0 hidden z-[70]">
+                    <button id="closeMenu" class="absolute top-0 left-0 p-4 md:hidden block">
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
+                        <i class="fa-solid fa-times text-gray-500 text-2xl"></i>
+                    </button>
+                    <div class="px-6 h-full pt-14">
+                        <div class="times overflow-y-scroll h-[63%] flex flex-col">
+                            <a href="#p" class="flex justify-between items-center py-6 mt-3 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Group</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                            <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Commitments</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                            <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Brands</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                            <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Beauty Science & Technology</p><i class="fa-solid fa-chevron-right text-sm mx-2"></i></a>
+                            <a href="#p" class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"><p class="pl-4">Career</p><i class="fa-solid fa-chevron-right text-sm mr-2"></i></a>
+                        </div>
+                        <div class="text-xs font-bold px-20 mx-auto border-b border-b-[#EBEBEB] pb-5 pt-7 tracking-wider">
+                            <a class="flex justify-evenly" href="#p">
+                                <i class="fa-solid fa-arrow-trend-up text-base"></i> 
+                                <p>OR.PA</p>
+                                <p class="text-[#c4c4c4]">€ 446.15</p>
+                                <p>-1.13%</p>
+                            </a>
+                        </div>
+                        <div class="flex flex-col items-center text-sm font-bold border-b border-b-[#EBEBEB] py-4">
+                            <div class="flex justify-between w-full px-12 mb-2">
+                                <a href="#p">Journalists</a>
+                                <a href="#p">Suppliers</a>
+                            </div>
+                            <div>
+                                <a href="#p">Investors & Shareholders</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-between py-4 text-sm text-black">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-circle-half-stroke"></i>
+                                <p>Accessibility</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-globe"></i>
+                                <p>Location</p>
+                            </div>
+                            <div class="border border-black">
+                                <select name="lang" id="lang">
+                                    <option value="en">EN</option>
+                                    <option value="fr">FR</option>
+                                    <option value="zl">ZH</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay" class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[69]"></div>
+                
+            </div>
+        </header>
         <div class="header">
             <div class="brands_header-video relative">
                 <video src="assets/video1.mp4.mp4" loop muted autoplay width="full">
                 </video>
                 
-            <div class="brands_heading absolute bottom-28 left-32 mx-auto w-1/2 h-20">
-                <h1 class="text-5xl font-semibold text-white">
+            <div class="brands_heading absolute md:bottom-28 sm:bottom-28 bottom-28 lg:left-32 md:left-12 sm:left-12 left-8 flex flex-col mx-auto lg:w-1/2 md:w-[80%] sm:w-[70%] w-[60%]">
+                <h1 class="lg:text-5xl md:text-5xl sm:text-4xl text-4xl font-semibold text-white">
                     Beauty Science & Technology
                 </h1>
-                <p class="text-2xl font-normal mt-1 text-white">Outpace advances in science through technology</p>
+                <p class="text-xl font-normal mt-1 text-white">Outpace advances in science through technology</p>
             </div>
             </div>
         </div>
-        <div  class="brand_text-area px-20">
-            <p class="text-lg ml-20 mr-16 mt-6">
-                L'Oréal /
-                <span class="font-semibold">Beauty Science & Technology</span>
-              </p>
-              <h4 class="ml-48 mr-48 my-12">Dive into the captivating world where beauty meets technology. From AI skin tech to AR virtual try-ons, the future of beauty is being reinvented by <span class="items-center">cutting-edge advancements from L'Oréal.</span></h4>
-        </div>
-        <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col space-x-8">
-                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img class="object-cover object-center " alt="hero" src="assets/bt3.jpg">
+        <!--part2-->
+        <section class="lg:px-32 md:px-12 sm:px-6 px-6">
+            <div  class="brand_text-area  lg:pt-10 md:pt-10 sm:pt-10 pt-10">
+                <p class="text-sm">
+                    L'Oréal / <span class="font-semibold">Beauty Science & Technology</span>
+                </p>     
+            </div>
+            <div>
+                <div class="text-center lg:pt-10 md:pt-10 sm:pt-8 pt-8 lg:pb-8 md:pb-8 sm:pb-8 pb-8">
+                    <h4 class="">Dive into the captivating world where beauty meets technology. From AI skin tech to AR virtual try-ons, the future of beauty is being reinvented by cutting-edge advancements from L'Oréal.</h4>
                 </div>
-                    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 justify-center text-center">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black lg:inline-block">Beauty tech at L'Oréal</h1>
-                        <p class="mb-8 leading-relaxed">At the heart of L'Oréal's beauty tech strategy is a drive for personalization and inclusivity. Our Beauty Tech division is a testament to the company's commitment to pushing the boundaries of innovation in the beauty industry, pioneering the creation of highly personalized and inclusive beauty solutions.</p>
-                        <p class="mb-8 leading-relaxed">The company has made significant strides in the realm of beauty tech, launching groundbreaking products like the HAPTA and 3D shu:brow. These devices embody the company's dedication to inclusivity, addressing individual consumer needs and preferences.</p>
-                        <p class="mb-8 leading-relaxed">L'Oréal's beauty tech journey also includes initiatives in seamless online-offline consumer experiences and leveraging AI and data analysis for enhanced personalization.The commitment to beauty tech is also evident in the company's collaborative efforts with startups to develop a new generation of innovative beauty products, devices, and digital services. </p>
-                        <div class="flex justify-center">
-                            <button class="inline-flex text-white bg-slate-700 border-0 py-2 px-6 focus:outline-none
-                            hover:bg-black rounded-full text-lg">Discover the future of beauty</button>
-                        </div>
-
+                <!---->
+                <div class="md:flex lg:flex lg:px-6 md:px-0 sm:px-0 px-0 ">
+                    <div class="lg:w-[50%] md:w-[50%] sm:-w-full w-full lg:pr-8 md:pr-8 sm:pr-0 lg:py-0 md:py-0 sm:py-8 py-8">
+                        <img class="object-cover" alt="hero" src="assets/bt3.jpg">
                     </div>
+                    <div class="lg:w-[50%] md:w-[50%] sm:w-full text-[#3d3d3d] lg:py-2 ">
+                        <h1 class="text-['Helvetica_Now_Display']sm:text-4xl text-4xl lg:pb-4 md:pb-4 sm:pb-6 pb-10 lg:mt-0  md:mt-0 sm:mt-8 mt-8 font-semibold ">Beauty tech at L'Oréal</h1>
+                        <p class="text-['Helvetica_Now_Display'] lg:pb-4 pd:mb-4 sm:pb-4 pb-4 leading-5">At the heart of L'Oréal's beauty tech strategy is a drive for personalization and inclusivity. Our Beauty Tech division is a testament to the company's commitment to pushing the boundaries of innovation in the beauty industry, pioneering the creation of highly personalized and inclusive beauty solutions.</p>
+                        <p class="text-['Helvetica_Now_Display'] lg:pb-4 pd:mb-4 sm:pb-4 pb-4 leading-5">The company has made significant strides in the realm of beauty tech, launching groundbreaking products like the HAPTA and 3D shu:brow. These devices embody the company's dedication to inclusivity, addressing individual consumer needs and preferences.</p>
+                        <p class="text-['Helvetica_Now_Display'] lg:pb-4 pd:mb-4 sm:pb-4 pb-6 leading-5">L'Oréal's beauty tech journey also includes initiatives in seamless online-offline consumer experiences and leveraging AI and data analysis for enhanced personalization.The commitment to beauty tech is also evident in the company's collaborative efforts with startups to develop a new generation of innovative beauty products, devices, and digital services. </p>
+                        <button class=" text-[#3d3d3d] bg-[#cdc4ba] text-['Helvetica_Now_Display'] border-0 py-1 px-4 focus:outline-none hover:bg-black rounded-full text-lg font-medium">Discover the future of beauty</button>
+                        
+                    </div>
+                </div>
             </div>
+           
         </section>
-        <div class="parent flex">
-        <div class="ml-28">
-            <div class="w-[21.5rem]">
-                <p
-                  class="font-serif text-[17px] font-[550] w-fit tracking-wider pb-5"
-                >
-                Focus on
-                </p>
-                <h1 class="text-4xl tracking-widest font-semibold pb-5">
-                    Our latest innovation
-                </h1>
-                <p class="text-justify text-md tracking-tight">
-                    L’Oréal is focused on inventing the future of beauty and becoming a Beauty Tech powerhouse. 
-                    To do so, we are always innovating. Here are our latest breakthroughs.
-                </p>
-              </div>
-        </div>
-        <div class="focus w-full relative">
-            <div class="focus-cards  grid grid-flow-col auto-cols-[27%] overflow-y-hidden overflow-x-scroll gap-4 pl-10 w-full">
-                <div class="focus-card flex  flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
-                    <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
-                    <img class="focus-img rounded-2xl object-center" src="assets/MasqueCardWater Saver v2 (1).jpg" alt="">
-                    <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
-                        <p class="text-[#cdc4ba] text-xs times tracking-widest"></p>
-                        <p class="text-white font-bold text-lg tracking-wider">Make every drop count with Water Saver!</p>
-
+        <!--part3-->
+        <section id="" class="">
+            <div class="md:flex md:justify-between xl:pl-28 md:pl-20 lg:py-12 md:py-10 sm:py-8 py-6">
+                <div class="lg:w-[26%] md:w-[26%] sm:w-full w-full md:text-left sm:text-center text-center lg:pt-16 md:pt-10 xl:px-0 lg:px-0 md:px-0 sm:px-6 px-3">
+                    <p class="font-['Times_New_Roman'] font-semibold">Focus On</p>
+                    <h3 class="text-[#3d3d3d] font-['Helvetica_Now_Display'] lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold my-4 ">Our latest innovation</h3>
+                    <p class="text-[#3d3d3d] font-['Helvetica_Now_Display'] text-base">L’Oréal is focused on inventing the future of beauty and becoming a Beauty Tech powerhouse. To do so, we are always innovating. Here are our latest breakthroughs.</p>
+                </div>
+                <div class="focus w-full relative loreal-cards relative lg:w-[68%] md:w-[68%] sm:w-full text-black font-bold text-center px-4 pt-8 pb-12">
+                    <div class="focus-cards  grid grid-flow-col auto-cols-[27%] overflow-y-hidden overflow-x-scroll gap-4 pl-10">
+                        <div class="focus-card flex  flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+                            <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+                            <img class="focus-img rounded-2xl object-center" src="assets/MasqueCardWater Saver v2 (1).jpg" alt="">
+                            <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
+                                <p class="text-[#cdc4ba] text-xs times tracking-widest"></p>
+                                <p class="text-white font-bold text-lg tracking-wider">Make every drop count with Water Saver!</p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+                            <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+                            <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardHaptaV2.jpg" alt="">
+                            <div class="bg-white absolute bottom-0 py-3 px-3 rounded-b-2xl">
+                                <p class="text-[#cdc4ba] text-xs times tracking-widest">Science and Technology</p>
+                                <p class="font-semibold text-lg tracking-wider">HAPTA: Worlds first handheld computerized makeup applicator</p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+                            <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+                            <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardBrowMagicV2 (1).jpg" alt="">
+                            <div class="bg-white absolute bottom-0 py-3 px-3 rounded-b-2xl w-full">
+                                <p class="text-[#cdc4ba] text-xs times tracking-widest">Science and Technology</p>
+                                <p class="font-semibold text-lg tracking-wider">3D shu:brow</p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+                            <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+                            <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardColorsonic v2.jpg" alt="">
+                            <div class="bg-white absolute bottom-0 py-3 px-3 rounded-b-2xl">
+                                <p class="text-[#cdc4ba] text-xs times tracking-widest">Research Innovation</p>
+                                <p class="font-semibold text-lg tracking-wider">L'Oreal Paris Colorsonic</p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+                            <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+                            <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardMetaProfiler.jpg" alt="">
+                            <div class="bg-white absolute bottom-0 py-3 px-3 rounded-b-2xl">
+                                <p class="text-[#cdc4ba] text-xs times tracking-widest">Science and Technology</p>
+                                <p class="font-semibold text-lg tracking-wider">Giorgio Armani Meta Profiler</p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+                            <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+                            <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardFutureOfBeauty.png" alt="">
+                            <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
+                                <p class="text-[#cdc4ba] text-xs times tracking-widest"></p>
+                                <p class="text-white font-bold text-lg tracking-wider">Discover the Future Of Beauty</p>
+        
+                            </div>
+        
+                        </div>
                     </div>
-
                 </div>
-                <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
-                    <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
-                    <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardHaptaV2.jpg" alt="">
-                    <div class="bg-white absolute bottom-0 py-3 px-3 pb-16 rounded-b-2xl">
-                        <p class="text-[#cdc4ba] text-xs times tracking-widest">Science and Technology</p>
-                        <p class="font-semibold text-lg tracking-wider">HAPTA: Worlds first handheld computerized makeup applicator</p>
-
+                </div>
+                </section>
+                <div class="parent1 mx-auto flex px-5 py-24 md:flex-row flex-col space-x-8 items-center">
+                    <div class="revolution ml-40 w-[21.5rem] lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black lg:inline-block">The Green Sciences revolution</h1>
+                        <p class="mb-8 leading-relaxed">L'Oréal's Green Sciences program represents a significant step towards a more sustainable future for the beauty industry. This initiative aims to harness the power of green sciences, including agronomy, biotech, green chemistry, and formulation, to create safe, effective, and environmentally-friendly products. Over the past decade, green sciences have been integral to L'Oréal's product design and manufacturing process, playing a critical role in the company's transition towards sustainability.</p>
+                        <p class="mb-8 leading-relaxed">Thanks to our unique collection of proprietary active ingredients, L’Oréal’s Research & Innovation teams are developing cutting-edge innovations in the formulation process. Our priority is to ensure the quality and sustainability of our ingredients in order to preserve global biodiversity and guarantee our customers’ safety.</p>
+                        <div class="flex justify-center">
+                            <button class="opacity-100 inline-flex text-white bg-slate-700 border-0 py-2 px-6 focus:outline-none
+                            hover:bg-black rounded-full text-lg">Rethinking innovation with Green Sciences</button>
+                        </div>
+        
                     </div>
-
-                </div>
-                <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
-                    <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
-                    <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardBrowMagicV2 (1).jpg" alt="">
-                    <div class="bg-white absolute bottom-0 pb-24 py-3 px-3 rounded-b-2xl w-full">
-                        <p class="text-[#cdc4ba] text-xs times tracking-widest">Science and Technology</p>
-                        <p class="font-semibold text-lg tracking-wider">3D shu:brow</p>
-
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 shadow-black">
+                        <img class="object-cover object-center " alt="hero" src="assets/green-sciences-2.webp">
                     </div>
-
                 </div>
-                <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
-                    <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
-                    <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardColorsonic v2.jpg" alt="">
-                    <div class="bg-white absolute bottom-0 py-3 px-3 pb-24 rounded-b-2xl">
-                        <p class="text-[#cdc4ba] text-xs times tracking-widest">Research Innovation</p>
-                        <p class="font-semibold text-lg tracking-wider">L'Oreal Paris Colorsonic</p>
-
+                
+                <!--part5-->
+                <div class="md:flex lg:flex lg:px-6 md:px-0 sm:px-0 px-0 ">
+                    <div class="lg:w-[50%] md:w-[50%] sm:-w-full w-full lg:pr-8 md:pr-8 sm:pr-0 lg:py-0 md:py-0 sm:py-8 py-8 ml-40">
+                        <img class="object-cover" alt="hero" src="assets/open-innovation.webp">
                     </div>
-
-                </div>
-                <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
-                    <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
-                    <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardMetaProfiler.jpg" alt="">
-                    <div class="bg-white absolute bottom-0 py-3 px-3 pb-20 rounded-b-2xl">
-                        <p class="text-[#cdc4ba] text-xs times tracking-widest">Science and Technology</p>
-                        <p class="font-semibold text-lg tracking-wider">Giorgio Armani Meta Profiler</p>
-
+                    <div class="lg:w-[50%] md:w-[50%] sm:w-full text-[#3d3d3d] lg:py-2 ">
+                        <h1 class="text-['Helvetica_Now_Display']sm:text-4xl text-4xl lg:pb-4 md:pb-4 sm:pb-6 pb-10 lg:mt-0  md:mt-0 sm:mt-8 mt-8 font-semibold ">L'Oréal Open innovation</h1>
+                        <p class="text-['Helvetica_Now_Display'] lg:pb-4 pd:mb-4 sm:pb-4 pb-4 leading-5">The L'Oréal Open Innovation program is a strategic approach that combines internal and external ideas to drive the company's innovation in beauty and digital technologies. This program is focused on fostering collaboration with early-stage companies that are reinventing digital beauty services.</p>
+                        <p class="text-['Helvetica_Now_Display'] lg:pb-4 pd:mb-4 sm:pb-4 pb-4 leading-5">Our Open Innovation program has led to several breakthroughs. For instance, we have partnered with Station F, Founders Factory, and Partech Ventures to launch our first Open Innovation program. Moreover, initiatives such as the L'Oréal North Asia Big Bang Beauty Tech Innovation Program have showcased the company's commitment to fostering open innovation and co-creation of innovative beauty solutions in different regions.</p>
+                        <button class=" text-[#3d3d3d] bg-[#cdc4ba] text-['Helvetica_Now_Display'] border-0 py-1 px-4 focus:outline-none hover:bg-black rounded-full text-lg font-medium">We Believe in Partnership</button>
+                        
                     </div>
-
                 </div>
-                <div class="focus-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
-                    <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
-                    <img class="focus-img rounded-2xl object-cover" src="assets/MasqueCardFutureOfBeauty.png" alt="">
-                    <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
-                        <p class="text-[#cdc4ba] text-xs times tracking-widest"></p>
-                        <p class="text-white font-bold text-lg tracking-wider">Discover the Future Of Beauty</p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="parent1 mx-auto flex px-5 py-24 md:flex-row flex-col space-x-8 items-center">
-            <div class="revolution ml-40 w-[21.5rem] lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black lg:inline-block">The Green Sciences revolution</h1>
-                <p class="mb-8 leading-relaxed">L'Oréal's Green Sciences program represents a significant step towards a more sustainable future for the beauty industry. This initiative aims to harness the power of green sciences, including agronomy, biotech, green chemistry, and formulation, to create safe, effective, and environmentally-friendly products. Over the past decade, green sciences have been integral to L'Oréal's product design and manufacturing process, playing a critical role in the company's transition towards sustainability.</p>
-                <p class="mb-8 leading-relaxed">Thanks to our unique collection of proprietary active ingredients, L’Oréal’s Research & Innovation teams are developing cutting-edge innovations in the formulation process. Our priority is to ensure the quality and sustainability of our ingredients in order to preserve global biodiversity and guarantee our customers’ safety.</p>
-                <div class="flex justify-center">
-                    <button class="opacity-100 inline-flex text-white bg-slate-700 border-0 py-2 px-6 focus:outline-none
-                    hover:bg-black rounded-full text-lg">Rethinking innovation with Green Sciences</button>
-                </div>
-
-            </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 shadow-black">
-                <img class="object-cover object-center " alt="hero" src="assets/green-sciences-2.webp">
-            </div>
-        </div>
-        <div class="parent2 ml-40 mx-auto flex px-5 py-24 md:flex-row flex-col space-x-8 items-center">
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 shadow-black">
-                <img class="object-cover object-center " alt="hero" src="assets/open-innovation.webp">
-            </div>
-            <div class="revolution ml-40 mr-40 w-[21.5rem] lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black lg:inline-block">L'Oréal Open innovation</h1>
-                <p class="mb-8 leading-relaxed">The L'Oréal Open Innovation program is a strategic approach that combines internal and external ideas to drive the company's innovation in beauty and digital technologies. This program is focused on fostering collaboration with early-stage companies that are reinventing digital beauty services.</p>
-                <p class="mb-8 leading-relaxed">Our Open Innovation program has led to several breakthroughs. For instance, we have partnered with Station F, Founders Factory, and Partech Ventures to launch our first Open Innovation program. Moreover, initiatives such as the L'Oréal North Asia Big Bang Beauty Tech Innovation Program have showcased the company's commitment to fostering open innovation and co-creation of innovative beauty solutions in different regions.</p>
-                <div class="flex justify-center">
-                    <button class="opacity-100 inline-flex text-white bg-slate-700 border-0 py-2 px-6 focus:outline-none
-                    hover:bg-black rounded-full text-lg">We Believe in Partnership</button>
-                </div>
-            </div>
-        </div>
+                <!--part6-->
+        
         <div class="parent3 flex">
-            <div class="ml-28">
+            <div class="ml-28 md:flex md:justify-between xl:pl-28 md:pl-20 lg:py-12 md:py-10 sm:py-8 py-6">
                 <div class="w-[21.5rem]">
                     <p
                       class="font-serif text-[17px] font-[550] w-fit tracking-wider pb-5"
@@ -189,7 +266,7 @@
                   </div>
             </div>
 
-            <div class="focus w-full relative">
+            <div class="focus w-full relative loreal-cards relative lg:w-[68%] md:w-[68%] sm:w-full text-white font-bold text-center px-4 pt-8 pb-12">
                 <div class="focus-cards  grid grid-flow-col auto-cols-[27%] overflow-y-hidden overflow-x-scroll gap-4 pl-10 w-full">
                     <div class="focus-card flex  flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
                         <div class="focus-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
@@ -240,9 +317,176 @@
                             <p class="text-white font-bold text-lg tracking-wider">Meet Guive</p>
     
                         </div>
-    
                     </div>
+                </div>
+          </div>
         </div>
     </div>
+    <footer class="xl:px-0 px-10 w-full">
+        <div class="xl:px-32 px-0 py-10 border-y border-y-[#C4C4C4] xl:flex xl:justify-between">
+            <div class="mb-8 flex flex-col">
+                <div class="flex justify-start">
+                    <div class="flex flex-col items-center">
+                        <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+                        <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Group</a></li>
+                        <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Commitments</a></li>
+                        <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Brands</a></li>
+                        <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Beauty Science</a></li>
+                        <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Careers</a></li>
+                    </ul>
+                    <!-- <ul class="flex gap-5 text-[0.9rem]">
+                        <li><a href="#p">Journalists</a></li>
+                        <li><a href="#p">Suppliers</a></li>
+                        <li><a href="#p">Investors & Shareholders</a></li>
+                    </ul> -->
+                </div>
+            </div>
+            <div>
+                <ul class="flex xl:gap-5 justify-between xl:border-b-0 xl:border-t-0 border-t border-b border-t-[#C4C4C4] border-b-[#C4C4C4] xl:py-0 py-5 xl:font-normal font-bold text-[0.9rem]">
+                    <li><a href="#p">Journalists</a></li>
+                    <li><a href="#p">Suppliers</a></li>
+                    <li><a href="#p">Investors & Shareholders</a></li>
+                </ul>
+                <!-- <ul>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Group</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Commitments</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Brands</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Beauty Science</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Careers</a></li>
+                </ul> -->
+            </div>
+        </div>
+        <div class="text-[#B3B3B3]">
+
+        </div>
+    </footer>
+    <div class="bg-[#9a9a9a] w-full h-[0.5px]"></div>
+      <footer
+        class="bg-white md:flex md:items-center md:justify-between p-4 md:p-6 xl:p-8 my-3"
+      >
+        <ul class="flex items-center flex-wrap mb-6 md:mb-0 justify-center">
+          <li>
+            <a
+              href="#"
+              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              >Cookie Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              >Terms of use</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              >Our Policies around the world
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="lg:text-sm text-xs hidden lg:block font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              >|
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline"
+              >Accessbility assessment</a
+            >
+          </li>
+        </ul>
+        <div class="flex justify-center space-x-6">
+          <a
+            href="#"
+            class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-facebook-f social_fb"
+          >
+          </a>
+          <a
+            href="#"
+            class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-twitter social"
+          >
+          </a>
+          <a
+            href="#"
+            class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-instagram-square social"
+          >
+          </a>
+          <a
+            href="#"
+            class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-linkedin-in social"
+          >
+          </a>
+          <a
+            href="#"
+            class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-youtube social"
+          >
+          </a>
+        </div>
+      </footer>
 </body>
+<script>
+    document.addEventListener('scroll', () => {
+        const nav = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    // Function to toggle menu and overlay
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+        const body = document.body;
+        const navbar = document.querySelector('.navbar');
+
+        menu.classList.toggle('hidden');
+        overlay.classList.toggle('hidden');
+        // Toggle body scrolling
+        body.classList.toggle('no-scroll');
+        // Toggle menu-open class on navbar
+        navbar.classList.toggle('menu-open');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+        const closeMenuBtn = document.getElementById('closeMenu');
+
+        // Event listener for hamburger button
+        document.getElementById('hamburger-btn').addEventListener('click', toggleMenu);
+
+        // Event listener for overlay
+        overlay.addEventListener('click', toggleMenu);
+
+        // Event listener for close menu button
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', function () {
+                toggleMenu();
+                // Hide the overlay
+                overlay.classList.add('hidden');
+            });
+        }
+    });
+
+</script>
 </html>

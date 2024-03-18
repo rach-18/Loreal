@@ -7,7 +7,7 @@
 .brand_right-section p {
   font-family: Helvetica, Arial, sans-serif;
   color: #5e5c5c;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.2;
   /* background-color: #fefeff; */
 }
@@ -18,7 +18,11 @@
   font-weight: 300;
 }
 
-.brand_left-section h1 {
+.helvitica-para {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.brands-Left-heading h1 {
   font-family: spectral, "Times New Roman", Times, serif;
   /* font-size: 2.8rem; */
   font-weight: 700;
@@ -39,39 +43,11 @@
     url("https://db.onlinewebfonts.com/t/14e13162e72ceb6e34ad33726fce5620.svg#Velocity - DEMO")
       format("svg");
 }
+
 .brands_velocity {
   font-family: "Velocity - DEMO";
   font-size: 3.3rem;
   text-align: center;
-}
-
-/* scrollbars */
-
-::-webkit-scrollbar {
-  height: 5px;
-  /* width: 5px; */
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 15px;
-  margin-left: 1.5rem;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #020070;
 }
 
 .video_section {
@@ -86,4 +62,148 @@ html {
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+/* scrollbars */
+
+::-webkit-scrollbar {
+  height: 7px;
+  /* width: 5px; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(105, 103, 103);
+  border-radius: 15px;
+  margin-left: 1.5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(43, 40, 40);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #020070;
+} */
+
+/* rachita code for header */
+
+#menu {
+  transition: left 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto; /* Allow scrolling within the menu */
+  /* z-index: 50; */
+}
+
+.navbar.menu-open:hover {
+  /* Override hover styles when menu is open */
+  background-color: transparent;
+  color: white;
+}
+
+#overlay {
+  transition: opacity 0.3s ease;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  color: #3d3d3d;
+  border-bottom: 0.5px solid #c4c4c4;
+}
+
+.img-overlay {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.6)
+  );
+  z-index: -1;
+}
+
+.hero-img {
+  z-index: -2;
+}
+
+#logo {
+  font-family: "Gomme Sans W04 Regular";
+}
+
+#sub-logo {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.4rem;
+  font-size: 0.6rem;
+}
+
+.times {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .social {
+  margin-right: 20px;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: #dbd9d6;
+}
+
+.social_fb {
+  margin-right: 20px;
+  padding: 15px 17px;
+  border-radius: 100%;
+  background-color: #dbd9d6;
+} */
+
+footer .social {
+  margin-right: 15px;
+  padding: 14px;
+  border-radius: 100%;
+  background-color: #dbd9d6;
+}
+
+footer .social_fb {
+  padding: 15px 17px;
+  border-radius: 100%;
+  background-color: #dbd9d6;
+}
+
+/* deepak code for overlay */
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 15px;
+}
+.loreal-cards:hover .overlay {
+  opacity: 1;
+}
+.loreal-cards-discover:hover .overlay {
+  opacity: 0;
+}
+.loreal-cards:hover .loreal-cards-discover {
+  transform: scale(0.96);
+}
+
+.loreal-cards-discover {
+  transition: all 300ms;
+}
+.loreal-cards:hover .loreal-cards-discover:hover {
+  transform: scale(1);
 }
