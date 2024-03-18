@@ -1,16 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.focus-overlay{
+    background-color:rgba(255, 255, 255, 0.5);
+    opacity: 0;
 }
-
+.focus:hover .focus-overlay {
+    opacity: 1;
+}
+.focus-card{
+    transition: all;
+    transition-duration: 300ms;
+}
+.focus:hover .focus-card:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+.focus-card:hover .focus-overlay {
+    opacity: 0;
+}
+.focus:hover .focus-card {
+    transform: scale(0.95);
+}
 body {
-    font-family: "Helvetica Now Display", Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
 }
-
-/* #hero {
-    height: 86%;
-} */
 
 #menu {
     transition: left 0.3s ease;
@@ -70,55 +81,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
- .discover-cards::-webkit-scrollbar {
-    height: 6px;
-    background-color: #aaa;
-    border-radius: 5px;
-}
 
-.discover-cards::-webkit-scrollbar-thumb {
-    background-color: #3D3D3D;
-    border-radius: 5px;
-}
-
-.gradient-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-}
-
-.brand-gradient {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-}
-
-.discover-overlay {
-    background-color: rgba(255, 255, 255, 0.5);
-    opacity: 0;
-}
-
-.discover:hover .discover-overlay {
-    opacity: 1;
-}
-
-.discover-card {
-    transition: all;
-    transition-duration: 300ms;
-}
-
-.discover:hover .discover-card:hover {
-    cursor: pointer;
-    transform: scale(1);
-}
-
-.discover-card:hover .discover-overlay {
-    opacity: 0;
-}
-
-.discover:hover .discover-card {
-    transform: scale(0.95);
-}
-
-.carousel {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
 footer .social{ 
     margin-right: 15px;
@@ -127,7 +90,7 @@ footer .social{
     background-color: #DBD9D6;
   }
   
-footer .social_fb{ 
+  footer .social_fb{ 
     padding: 15px 17px;
     border-radius: 100%;
     background-color: #DBD9D6;
