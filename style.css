@@ -120,16 +120,15 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social{ 
-    margin-right: 20px;
-    padding: 15px;
+footer .social{ 
+    margin-right: 15px;
+    padding: 14px;
     border-radius: 100%;
     background-color: #DBD9D6;
-}
-
-.social_fb{ 
-    margin-right: 20px;
+  }
+  
+footer .social_fb{ 
     padding: 15px 17px;
     border-radius: 100%;
     background-color: #DBD9D6;
-}
+  }

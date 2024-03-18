@@ -106,3 +106,15 @@
   background-color: #3D3D3D;
   border-radius:5px;
 }
+footer .social{ 
+  margin-right: 15px;
+  padding: 14px;
+  border-radius: 100%;
+  background-color: #DBD9D6;
+}
+
+footer .social_fb{ 
+  padding: 15px 17px;
+  border-radius: 100%;
+  background-color: #DBD9D6;
+}
