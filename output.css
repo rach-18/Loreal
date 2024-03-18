@@ -905,6 +905,10 @@ video {
   height: 0.5px;
 }
 
+.h-\[45\%\] {
+  height: 45%;
+}
+
 .h-\[550px\] {
   height: 550px;
 }
@@ -933,16 +937,12 @@ video {
   height: 100vh;
 }
 
+.h-\[16rem\] {
+  height: 16rem;
+}
+
 .h-\[50\%\] {
   height: 50%;
-}
-
-.h-\[45\%\] {
-  height: 45%;
-}
-
-.h-\[40\%\] {
-  height: 40%;
 }
 
 .w-1 {
@@ -1021,10 +1021,6 @@ video {
   width: 28%;
 }
 
-.w-\[50\%\] {
-  width: 50%;
-}
-
 .w-\[90\%\] {
   width: 90%;
 }
@@ -1039,6 +1035,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[8rem\] {
+  width: 8rem;
 }
 
 .border-collapse {
@@ -1091,8 +1091,20 @@ video {
   grid-auto-columns: 25%;
 }
 
-.auto-cols-\[26\%\] {
-  grid-auto-columns: 26%;
+.auto-cols-\[35\%\] {
+  grid-auto-columns: 35%;
+}
+
+.auto-cols-\[40\%\] {
+  grid-auto-columns: 40%;
+}
+
+.auto-cols-\[30\%\] {
+  grid-auto-columns: 30%;
+}
+
+.auto-cols-\[45\%\] {
+  grid-auto-columns: 45%;
 }
 
 .grid-flow-col {
@@ -1179,10 +1191,10 @@ video {
   gap: 2rem;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1191,10 +1203,10 @@ video {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1360,8 +1372,65 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#eae6e1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 230 225 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-\[url\(assets\/CDP\.webp\)\] {
+  background-image: url(assets/CDP.webp);
+}
+
+.bg-\[url\(assets\/building\.webp\)\] {
+  background-image: url(assets/building.webp);
+}
+
+.bg-\[url\(assets\/stand\.webp\)\] {
+  background-image: url(assets/stand.webp);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/articles-media\/commitments\/americas-cup\/card-amcup\.jpg\?rev\=62ad7e6c5682437594f9a98c1ad3eb07\&cx\=0\.45\&cy\=0\.35\&cw\=216\&ch\=400\&blr\=False\&hash\=93B4024C4BAAAE09F4C521805393E3A1\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/commitments/americas-cup/card-amcup.jpg?rev=62ad7e6c5682437594f9a98c1ad3eb07&cx=0.45&cy=0.35&cw=216&ch=400&blr=False&hash=93B4024C4BAAAE09F4C521805393E3A1);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/5-science-and-technology\/airlight\/airlight-card\.jpg\?rev\=a5728869861749b198f2f2a00c48a807\&cx\=0\.53\&cy\=0\.3\&cw\=216\&ch\=400\&blr\=False\&hash\=C62A3D5F97C889D5FB43AD1C06D2BD11\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/5-science-and-technology/airlight/airlight-card.jpg?rev=a5728869861749b198f2f2a00c48a807&cx=0.53&cy=0.3&cw=216&ch=400&blr=False&hash=C62A3D5F97C889D5FB43AD1C06D2BD11);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/2-group\/le-visionnaire\/card\.jpg\?rev\=73a03192b92443eb9435976e77b2d938\&cx\=0\.5\&cy\=0\.5\&cw\=216\&ch\=400\&blr\=False\&hash\=1A641262C8E167754ED82328AD23AF8B\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/le-visionnaire/card.jpg?rev=73a03192b92443eb9435976e77b2d938&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=1A641262C8E167754ED82328AD23AF8B);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/articles-media\/ces-2023-hapta\/masquecardwater-saver-v2\.jpg\?rev\=db6a4b8d3acb48de8cd252a94a553ba2\&cx\=0\.5\&cy\=0\.5\&cw\=216\&ch\=400\&blr\=False\&hash\=440062DD13BF0CFBA7EF879CBCDD4F23\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/ces-2023-hapta/masquecardwater-saver-v2.jpg?rev=db6a4b8d3acb48de8cd252a94a553ba2&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=440062DD13BF0CFBA7EF879CBCDD4F23);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/news-media\/commitments\/cdp-supplier-engagement\/masquecard\.jpg\?rev\=f253ba853ead4618aabf621fb150bb47\&cx\=0\.51\&cy\=0\.33\&cw\=216\&ch\=400\&blr\=False\&hash\=523BBA69556987345C93EAB59DF03968\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/news-media/commitments/cdp-supplier-engagement/masquecard.jpg?rev=f253ba853ead4618aabf621fb150bb47&cx=0.51&cy=0.33&cw=216&ch=400&blr=False&hash=523BBA69556987345C93EAB59DF03968);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/press-releases\/research-and-innovation\/melasyl\.jpg\?rev\=30b0a941e0e249ffa8d09338b80fc1c4\&cx\=0\.54\&cy\=0\.32\&cw\=216\&ch\=400\&blr\=False\&hash\=ED3C33ED5B913F3C746A81BA40914BB3\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/research-and-innovation/melasyl.jpg?rev=30b0a941e0e249ffa8d09338b80fc1c4&cx=0.54&cy=0.32&cw=216&ch=400&blr=False&hash=ED3C33ED5B913F3C746A81BA40914BB3);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/3-commitments\/external-recognition\/equileap-2024-card\.jpg\?rev\=dda859d13db94f8f8bce11b226ac0414\&cx\=0\.54\&cy\=0\.38\&cw\=216\&ch\=400\&blr\=False\&hash\=01B33459C6C347C8917A294CB2B7E555\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/3-commitments/external-recognition/equileap-2024-card.jpg?rev=dda859d13db94f8f8bce11b226ac0414&cx=0.54&cy=0.38&cw=216&ch=400&blr=False&hash=01B33459C6C347C8917A294CB2B7E555);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/press-releases\/group\/asmita-dubey-2023-global-marketer-of-the-year\/asmita-card\.jpg\?rev\=fbebab9b89bc4410b52890ec7b0bce93\&cx\=0\.51\&cy\=0\.47\&cw\=216\&ch\=400\&blr\=False\&hash\=7C99FD0B21918D37EF28D2B910009CB1\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/group/asmita-dubey-2023-global-marketer-of-the-year/asmita-card.jpg?rev=fbebab9b89bc4410b52890ec7b0bce93&cx=0.51&cy=0.47&cw=216&ch=400&blr=False&hash=7C99FD0B21918D37EF28D2B910009CB1);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/4-brands\/miu-miu\.png\?rev\=046fcb0f45c043e9904917ab8ebd4e57\&cx\=0\.51\&cy\=0\.47\&cw\=216\&ch\=400\&blr\=False\&hash\=4CA39029F9DF919C538E642EE751854A\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/miu-miu.png?rev=046fcb0f45c043e9904917ab8ebd4e57&cx=0.51&cy=0.47&cw=216&ch=400&blr=False&hash=4CA39029F9DF919C538E642EE751854A);
+}
+
+.bg-\[url\(https\:\/\/www\.loreal\.com\/-\/media\/project\/loreal\/brand-sites\/corp\/master\/lcorp\/default-assets\/default-card-rh\.jpg\?rev\=f14ff7d5cff74e4491e0f146d178968e\&cx\=0\.5\&cy\=0\.5\&cw\=216\&ch\=400\&blr\=False\&hash\=3B07A5099D4C47E12CE0A5255A5552D2\)\] {
+  background-image: url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/default-assets/default-card-rh.jpg?rev=f14ff7d5cff74e4491e0f146d178968e&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=3B07A5099D4C47E12CE0A5255A5552D2);
 }
 
 .object-cover {
@@ -1540,6 +1609,11 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pb-10 {
@@ -1770,12 +1844,36 @@ video {
   padding-top: 1.75rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.font-\[\'Helvetica_Now_Display\'\] {
+  font-family: 'Helvetica Now Display';
+}
+
+.font-\[\'Times_New_Roman\'\] {
+  font-family: 'Times New Roman';
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
@@ -1830,6 +1928,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[0\.8rem\] {
+  font-size: 0.8rem;
 }
 
 .font-bold {
@@ -1949,6 +2051,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1980,6 +2087,12 @@ video {
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2111,6 +2224,10 @@ video {
     width: 64%;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:auto-cols-\[19\%\] {
     grid-auto-columns: 19%;
   }
@@ -2119,12 +2236,51 @@ video {
     grid-auto-columns: 20%;
   }
 
+  .sm\:auto-cols-\[45\%\] {
+    grid-auto-columns: 45%;
+  }
+
+  .sm\:auto-cols-\[40\%\] {
+    grid-auto-columns: 40%;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
   }
 
   .sm\:overflow-x-hidden {
     overflow-x: hidden;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sm\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -2157,6 +2313,14 @@ video {
     height: 6rem;
   }
 
+  .md\:h-\[23rem\] {
+    height: 23rem;
+  }
+
+  .md\:h-\[40\%\] {
+    height: 40%;
+  }
+
   .md\:w-16 {
     width: 4rem;
   }
@@ -2173,12 +2337,28 @@ video {
     width: 52%;
   }
 
+  .md\:w-\[13rem\] {
+    width: 13rem;
+  }
+
+  .md\:w-\[28\%\] {
+    width: 28%;
+  }
+
+  .md\:w-\[68\%\] {
+    width: 68%;
+  }
+
   .md\:auto-cols-\[29\%\] {
     grid-auto-columns: 29%;
   }
 
   .md\:auto-cols-\[30\%\] {
     grid-auto-columns: 30%;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:items-center {
@@ -2224,6 +2404,16 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pb-7 {
     padding-bottom: 1.75rem;
   }
@@ -2234,6 +2424,22 @@ video {
 
   .md\:pr-2 {
     padding-right: 0.5rem;
+  }
+
+  .md\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-2xl {
@@ -2254,6 +2460,20 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .md\:leading-7 {
@@ -2319,6 +2539,14 @@ video {
     width: 70%;
   }
 
+  .lg\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .lg\:w-\[73\%\] {
+    width: 73%;
+  }
+
   .lg\:scale-\[1\.35\] {
     --tw-scale-x: 1.35;
     --tw-scale-y: 1.35;
@@ -2341,8 +2569,30 @@ video {
     align-items: flex-start;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .lg\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .lg\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .lg\:text-left {
@@ -2362,6 +2612,16 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:leading-3 {
@@ -2463,6 +2723,10 @@ video {
 
   .xl\:pl-36 {
     padding-left: 9rem;
+  }
+
+  .xl\:pl-28 {
+    padding-left: 7rem;
   }
 
   .xl\:font-normal {
