@@ -6,7 +6,7 @@
 }
 .group .linear_gradient{
   background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, transparent 20%, transparent 43%, rgba(0, 0, 0, .5));
-  height: 90vh;
+  /* height: 100vh; */
 }
 .group .font-serif{
   font-family: Halesworth,Times New Roman,Times,serif;
@@ -112,11 +112,17 @@
   border-radius: 100%;
   background-color: #DBD9D6;
 }
+.group footer .social:hover{
+  background-color: #3D3D3D;
+}
 
 .group footer .social_fb{ 
   padding: 15px 17px;
   border-radius: 100%;
   background-color: #DBD9D6;
+}
+.group footer .social_fb:hover{
+  background-color: #3D3D3D;
 }
 .group #menu {
   transition: left 0.3s ease;

@@ -16,6 +16,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://db.onlinewebfonts.com/c/0f9e72426345e4f7fd0fa8ca9f8a309e?family=Gomme+Sans+W04+Regular"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
 
     <title>L’Oréal Groupe : Who We Are</title>
     <link rel="icon" type="image/x-icon" href="assets/o-solid.svg" />
@@ -25,29 +37,35 @@
       <header class="text-white h-screen w-screen">
         <div
           id="hero"
-          class="w-full 2xl:h-full xl:h-[90%] lg:h-full h-[550px] relative"
+          class="w-full 2xl:h-full xl:h-full lg:h-full h-[550px] relative"
         >
-          <div class="img-overlay w-full h-full absolute top-0 left-0"></div>
+          <div
+            class="img-overlay w-full h-full absolute top-0 left-0 z-[-4]"
+          ></div>
           <img
-            class="hero-img w-full h-full object-cover top-0 left-0 absolute"
+            class="hero-img w-full h-full object-cover top-0 left-0 absolute z-[-5]"
             src="assets/herowho-are-we.webp"
             alt=""
           />
           <nav
-            class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-50 hover:bg-white hover:text-[#3d3d3d] transition-all duration-300"
+            class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-[70] hover:bg-white hover:text-[#3d3d3d] transition-all duration-300"
           >
             <button id="hamburger-btn" class="text-2xl">
               <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="flex flex-col items-center">
-              <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
-              <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+            <div class="flex flex-col items-center text-center">
+              <a href="../index.html">
+                <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+                <p id="sub-logo" class="text-xs uppercase font-medium">
+                  Groupe
+                </p>
+              </a>
             </div>
             <div></div>
           </nav>
           <div
             id="menu"
-            class="text-[#4A4A4A] bg-white h-screen xl:w-[28%] lg:w-[40%] md:w-[50%] w-full absolute top-0 left-0 hidden z-[70]"
+            class="text-[#4A4A4A] bg-white h-screen xl:w-[28%] lg:w-[40%] md:w-[50%] w-full absolute top-0 left-0 hidden z-[100]"
           >
             <button
               id="closeMenu"
@@ -65,25 +83,25 @@
                   <i class="fa-solid fa-chevron-right text-sm mr-2"></i
                 ></a>
                 <a
-                  href="../Commitment/index.html"
+                  href="../Deepak (Commitment)/index.html"
                   class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                   ><p class="pl-4">Commitments</p>
                   <i class="fa-solid fa-chevron-right text-sm mr-2"></i
                 ></a>
                 <a
-                  href="../Brand/branc_index.html"
+                  href="../Abhinav (Brand)/branc_index.html"
                   class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                   ><p class="pl-4">Brands</p>
                   <i class="fa-solid fa-chevron-right text-sm mr-2"></i
                 ></a>
                 <a
-                  href="../Beauty Science & Technology/index.html"
+                  href="../Zafar (Beauty Science & Technology)/index.html "
                   class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                   ><p class="pl-4">Beauty Science & Technology</p>
                   <i class="fa-solid fa-chevron-right text-sm mx-2"></i
                 ></a>
                 <a
-                  href="../Careers/index.html"
+                  href="../Himanshu (Careers)/index.html"
                   class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                   ><p class="pl-4">Career</p>
                   <i class="fa-solid fa-chevron-right text-sm mr-2"></i
@@ -131,13 +149,13 @@
           </div>
           <div
             id="overlay"
-            class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[69]"
+            class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[80]"
           ></div>
           <div
             class="flex flex-col 2xl:top-[60%] xl:top-[50%] lg:top-[45%] top-[65%] 2xl:pl-32 pl-20 2xl:w-full lg:w-[60%] w-full absolute z-10"
           >
             <p
-              class="text-white md:ps-20 md:pt-18 pt-12 sm:pt-0 w-fit lg:text-6xl md:text-5xl sm:text-4xl text-3xl tracking-wider font-serif font-medium"
+              class="text-white md:ps-20 md:pt-20 pt-12 sm:pt-0 w-fit lg:text-6xl md:text-5xl sm:text-4xl text-3xl tracking-wider font-serif font-medium"
             >
               Who We Are
             </p>
@@ -154,7 +172,7 @@
       </div> -->
 
       <section id="LOreal" class="bg-[#f5f5f5]">
-        <div class="xl:px-28 pt-8 md:px-20 sm:px-8 px-4">
+        <div class="xl:px-28 md:px-20 sm:px-8 px-4 pt-10">
           <span class="lg:text-base sm:text-sm text-sm">
             L'Oréal /<strong> Group</strong>
           </span>
@@ -182,47 +200,55 @@
           <div
             class="cards lg:w-[66%] md:w-[68%] inspired-cards sm:w-full grid grid-flow-col gap-4 overflow-x-scroll text-white font-bold text-center px-4 pt-8 pb-12"
           >
-            <div
-              class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/about-loreal/hero-about-loreal-215456.jpg?rev=fe021a4ba7be422ea11284b5e672ed42&cx=0.57&cy=0.41&cw=216&ch=400&blr=False&hash=45520FEC82BAC1FED6026ECF8C72DCE8')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <p class="lg:pb-16 sm:pb-10 lg:text-2xl md:text-lg font-serif">
-                <a href="">About L'Oreal</a>
-              </p>
-            </div>
-            <div
-              class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/governance-and-ethics/card-governance-and-ethics.jpg?rev=6b36ed00331e4b938106d7e910a7b811&cx=0.6&cy=0.31&cw=216&ch=400&blr=False&hash=6B615186DBBF5A6484AD1A752503C7A9')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
-            >
-              <div
-                class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <p class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif">
-                <a href="">Governance and Ethics</a>
-              </p>
-            </div>
-            <div
-              class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/hero/hero-culture.jpg?rev=5690734e7e454788b1b622d0cd08d35c&cx=0.6&cy=0.55&cw=216&ch=400&blr=False&hash=4067F9A66A3604AA44F8FB27624CF3DA')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
-            >
-              <div
-                class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <p
-                class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif lg:px-2"
+                class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/about-loreal/hero-about-loreal-215456.jpg?rev=fe021a4ba7be422ea11284b5e672ed42&cx=0.57&cy=0.41&cw=216&ch=400&blr=False&hash=45520FEC82BAC1FED6026ECF8C72DCE8')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
               >
-                <a href="">Culture & Heritage</a>
-              </p>
+                <div
+                  class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <p class="lg:pb-16 sm:pb-10 lg:text-2xl md:text-lg font-serif">
+                  <a href="">About L'Oreal</a>
+                </p>
+              </div>
             </div>
-            <div
-              class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/default-assets/default-card-docs.jpg?rev=430f35e4d0d8416d881bad77c04b8293&cx=0.51&cy=0.49&cw=216&ch=400&blr=False&hash=C0CEA438147C2616B8BA9CEBD58FB345')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <p class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif">
-                <a href="">News and Documentation</a>
-              </p>
+                class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/governance-and-ethics/card-governance-and-ethics.jpg?rev=6b36ed00331e4b938106d7e910a7b811&cx=0.6&cy=0.31&cw=216&ch=400&blr=False&hash=6B615186DBBF5A6484AD1A752503C7A9')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
+              >
+                <div
+                  class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <p class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif">
+                  <a href="">Governance and Ethics</a>
+                </p>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <div
+                class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/hero/hero-culture.jpg?rev=5690734e7e454788b1b622d0cd08d35c&cx=0.6&cy=0.55&cw=216&ch=400&blr=False&hash=4067F9A66A3604AA44F8FB27624CF3DA')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
+              >
+                <div
+                  class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <p
+                  class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif lg:px-2"
+                >
+                  <a href="">Culture & Heritage</a>
+                </p>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <div
+                class="cards-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] bg-[url('https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/default-assets/default-card-docs.jpg?rev=430f35e4d0d8416d881bad77c04b8293&cx=0.51&cy=0.49&cw=216&ch=400&blr=False&hash=C0CEA438147C2616B8BA9CEBD58FB345')] bg-right shadow-2xl rounded-2xl flex items-end justify-center gradient"
+              >
+                <div
+                  class="cards-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <p class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif">
+                  <a href="">News and Documentation</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -230,7 +256,7 @@
 
       <div class="text_para text-[#3D3D3D] text-center py-20 xl:px-60">
         <p
-          class="xl:text-[85px] lg:text-7xl md:text-5xl text-4xl leading-[1.3] velocity lg:leading-[1.1] pb-12"
+          class="xl:text-[85px] lg:text-7xl md:text-5xl text-4xl leading-[1.3] velocity lg:leading-[1.1] pb-12 px-5"
         >
           L’Oréal is the archetype of the “Beauty Pure Player” - nothing but
           Beauty, for all types of Beauty - and our unique expertise acquired
@@ -523,7 +549,7 @@
           class="md:flex md:justify-between xl:pl-28 md:pl-20 lg:py-12 md:py-10 sm:py-8 py-6"
         >
           <div
-            class="lg:w-[25%] md:w-[28%] sm:w-full md:text-left sm:text-center text-center lg:pt-16 md:pt-10 lg:px-0 md:px-0 sm:px-6"
+            class="lg:w-[25%] md:w-[28%] sm:w-full md:text-left sm:text-center text-center lg:pt-10 md:pt-10 lg:px-0 md:px-0 sm:px-6"
           >
             <p class="font-['Times_New_Roman'] font-semibold">Be Inspired</p>
             <h3
@@ -532,130 +558,178 @@
               Our Lastest News
             </h3>
             <ul
-              class="lg:pt-8 md:pt-8 sm:pt-5 pb-12 font text-[#3d3d3d] text-lg flex flex-wrap md:flex-col xl:px-0 lg:px-0 md:px-4 px-4 sm:justify-center"
+              class="lg:pt-2 md:pt-4 sm:pt-5 pb-12 font text-[#3d3d3d] text-lg flex flex-wrap md:flex-col xl:px-0 lg:px-0 md:px-4 px-4 sm:justify-center"
             >
-              <li><a class="font-semibold" href="">__ All</a></li>
-              <li><a class="px-4" href="">Environment</a></li>
-              <li><a class="px-4" href="">Diversity</a></li>
-              <li><a class="px-4" href="">Commitments</a></li>
-              <li><a class="px-4" href="">Finance</a></li>
-              <li><a class="px-4" href="">L'Oréal Group</a></li>
-              <li><a class="px-4" href="">Beauty Tech</a></li>
-              <li><a class="px-4" href="">Science & Technology</a></li>
+              <li class="lg:mt-1">
+                <a class="font-semibold md:text-sm lg:text-lg" href=""
+                  >__ All</a
+                >
+              </li>
+              <li class="lg:mt-1">
+                <a class="px-4 md:text-sm lg:text-lg hover:text-black" href=""
+                  >Environment</a
+                >
+              </li>
+              <li class="lg:mt-1">
+                <a class="px-4 md:text-sm lg:text-lg hover:text-black" href=""
+                  >Diversity</a
+                >
+              </li>
+              <li class="lg:mt-1">
+                <a class="px-4 md:text-sm lg:text-lg hover:text-black" href=""
+                  >Commitments</a
+                >
+              </li>
+              <li class="lg:mt-1">
+                <a class="px-4 md:text-sm lg:text-lg hover:text-black" href=""
+                  >Finance</a
+                >
+              </li>
+              <li class="lg:mt-1">
+                <a class="px-4 md:text-sm lg:text-lg hover:text-black" href=""
+                  >L'Oréal Group</a
+                >
+              </li>
+              <li class="lg:mt-1">
+                <a class="px-4 md:text-sm lg:text-lg hover:text-black" href=""
+                  >Beauty Tech</a
+                >
+              </li>
+              <li class="lg:mt-1">
+                <a class="px-4 md:text-sm lg:text-lg hover:text-black" href=""
+                  >Science & Technology</a
+                >
+              </li>
             </ul>
           </div>
+
           <div
             class="inspired inspired-cards lg:w-[73%] md:w-[68%] sm:w-full grid grid-flow-col gap-4 overflow-x-scroll text-white font-bold text-center px-4 pt-8 pb-12"
           >
-            <div
-              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/CDP.webp)] flex items-end"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <a
-                href=""
-                class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+                class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/CDP.webp)] flex items-end"
               >
-                <p class="text-gray-300 font-serif md:text-sm text-xs">
-                  Commitments
-                </p>
-                <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                  L'Oréal is Recognised by CDP as aleader on Supplier Engagement
-                </p>
-              </a>
+                <div
+                  class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <a
+                  href=""
+                  class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+                >
+                  <p class="text-gray-300 font-serif md:text-sm text-xs">
+                    Commitments
+                  </p>
+                  <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                    L'Oréal is Recognised by CDP as aleader on Supplier
+                    Engagement
+                  </p>
+                </a>
+              </div>
             </div>
-            <div
-              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <a
-                href=""
-                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
               >
-                <p class="text-gray-300 font-serif md:text-sm text-xs">
-                  Commitments
-                </p>
-                <p class="text-[#3d3d3d] md:text-[16px] text-sm font">
-                  L'Oréal Groupe unveils Airlight Pro, a breakthrough
-                  professional-grade hair drying tool
-                </p>
-              </a>
+                <div
+                  class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <a
+                  href=""
+                  class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                >
+                  <p class="text-gray-300 font-serif md:text-sm text-xs">
+                    Commitments
+                  </p>
+                  <p
+                    class="text-[#3d3d3d] md:text-[16px] md:text-sm text-xs font"
+                  >
+                    L'Oréal Groupe unveils Airlight Pro, a breakthrough
+                    professional-grade hair drying tool
+                  </p>
+                </a>
+              </div>
             </div>
-            <div
-              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <a
-                href=""
-                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
               >
-                <p class="text-gray-300 font-serif md:text-sm text-xs">
-                  Finance
-                </p>
-                <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                  L’Oréal to acquire Gjosa, environmental water tech startup
-                </p>
-              </a>
+                <div
+                  class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <a
+                  href=""
+                  class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                >
+                  <p class="text-gray-300 font-serif md:text-sm text-xs">
+                    Finance
+                  </p>
+                  <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                    L’Oréal to acquire Gjosa, environmental water tech startup
+                  </p>
+                </a>
+              </div>
             </div>
-            <div
-              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/stand.webp)] flex items-end"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <a
-                href=""
-                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/stand.webp)] flex items-end"
               >
-                <p class="text-gray-300 font-serif md:text-sm text-xs">
-                  Commitments
-                </p>
-                <p class="text-[#3d3d3d] md:text-lg text-[0.8rem] font">
-                  L’Oréal paris’ new campaign to support its stand up against
-                  street harassment program
-                </p>
-              </a>
+                <div
+                  class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <a
+                  href=""
+                  class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                >
+                  <p class="text-gray-300 font-serif md:text-sm text-xs">
+                    Commitments
+                  </p>
+                  <p class="text-[#3d3d3d] md:text-lg text-[0.8rem] font">
+                    L’Oréal paris’ new campaign to support its stand up against
+                    street harassment program
+                  </p>
+                </a>
+              </div>
             </div>
-            <div
-              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <a
-                href=""
-                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
               >
-                <p class="text-gray-300 font-serif md:text-sm text-xs">
-                  Finance
-                </p>
-                <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                  Sales at 30 September 2023
-                </p>
-              </a>
+                <div
+                  class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <a
+                  href=""
+                  class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                >
+                  <p class="text-gray-300 font-serif md:text-sm text-xs">
+                    Finance
+                  </p>
+                  <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                    Sales at 30 September 2023
+                  </p>
+                </a>
+              </div>
             </div>
-            <div
-              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
-            >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <div
-                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-              ></div>
-              <a
-                href=""
-                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(assets/building.webp)] flex items-end"
               >
-                <p class="text-gray-300 font-serif md:text-sm text-xs">
-                  Finance
-                </p>
-                <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                  L’Oréal completes acquisition of Aesop
-                </p>
-              </a>
+                <div
+                  class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+                ></div>
+                <a
+                  href=""
+                  class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+                >
+                  <p class="text-gray-300 font-serif md:text-sm text-xs">
+                    Finance
+                  </p>
+                  <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                    L’Oréal completes acquisition of Aesop
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -686,28 +760,28 @@
                 <li class="my-4">
                   <a
                     class="transition-all duration-300 hover:text-[#B3B3B3]"
-                    href="../Commitment/index.html"
+                    href="../Deepak (Commitment)/index.html"
                     >Commitments</a
                   >
                 </li>
                 <li class="my-4">
                   <a
                     class="transition-all duration-300 hover:text-[#B3B3B3]"
-                    href="../Brand/branc_index.html"
+                    href="../Abhinav (Brand)/branc_index.html"
                     >Brands</a
                   >
                 </li>
                 <li class="my-4">
                   <a
                     class="transition-all duration-300 hover:text-[#B3B3B3]"
-                    href="../Beauty Science & Technology/index.html"
+                    href="../Zafar (Beauty Science & Technology)/index.html "
                     >Beauty Science</a
                   >
                 </li>
                 <li class="my-4">
                   <a
                     class="transition-all duration-300 hover:text-[#B3B3B3]"
-                    href="../Careers/index.html"
+                    href="../Himanshu (Careers)/index.html"
                     >Careers</a
                   >
                 </li>
@@ -721,7 +795,7 @@
           </div>
           <div>
             <ul
-              class="flex xl:gap-5 justify-between xl:border-b-0 flex-wrap xl:border-t-0 border-t border-b border-t-[#C4C4C4] border-b-[#C4C4C4] xl:py-0 py-5 xl:font-normal font-bold text-[0.9rem]"
+              class="flex flex-wrap xl:gap-5 justify-between xl:border-b-0 flex-wrap xl:border-t-0 border-t border-b border-t-[#C4C4C4] border-b-[#C4C4C4] xl:py-0 py-5 xl:font-normal font-bold text-[0.9rem]"
             >
               <li><a href="#p">Journalists</a></li>
               <li><a href="#p">Suppliers</a></li>
@@ -739,7 +813,7 @@
         <div class="text-[#B3B3B3]"></div>
       </footer>
 
-      <div class="bg-[#9a9a9a] w-full h-[0.5px]"></div>
+      <!-- <div class="bg-[#9a9a9a] w-full h-[0.5px]"></div> -->
       <footer
         class="bg-white md:flex md:items-center md:justify-between p-4 md:p-6 xl:p-8 my-3"
       >
@@ -747,42 +821,42 @@
           <li>
             <a
               href="#"
-              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
               >Cookie Policy</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
               >Terms of use</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
               >Privacy Policy</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
               >Our Policies around the world
             </a>
           </li>
           <li>
             <a
               href="#"
-              class="lg:text-sm text-xs hidden lg:block font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+              class="lg:text-sm text-xs hidden lg:block font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
               >|
             </a>
           </li>
           <li>
             <a
               href="#"
-              class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline"
+              class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300"
               >Accessbility assessment</a
             >
           </li>
@@ -810,12 +884,16 @@
           </a>
           <a
             href="#"
-            class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-youtube social"
+            class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3D3D3D] duration-300 fab fa-youtube social"
           >
           </a>
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       document.addEventListener("scroll", () => {
         const nav = document.querySelector(".navbar");
@@ -864,5 +942,6 @@
         }
       });
     </script>
+    
   </body>
 </html>

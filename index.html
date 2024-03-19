@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Rachita (Home)/style.css" />
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -22,6 +22,7 @@
       href="https://db.onlinewebfonts.com/c/0976a2619014c5855690b7509fab4c6e?family=Helvetica+Now+Display"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +30,10 @@
       rel="stylesheet"
     />
     <!-- <link href="https://db.onlinewebfonts.com/c/14e13162e72ceb6e34ad33726fce5620?family=Velocity+-+DEMO" rel="stylesheet"> -->
-    <title>Loreal Home Page</title>
+    <title>
+      L’Oréal, world leader in beauty : makeup, cosmetics, haircare, perfume
+    </title>
+    <link rel="icon" type="image/x-icon" href="Rachita (Home)/o-solid.svg" />
   </head>
   <body class="overflow-x-hidden">
     <header class="text-white h-screen w-screen">
@@ -37,27 +41,31 @@
         id="hero"
         class="w-full 2xl:h-full xl:h-[90%] lg:h-full h-[550px] relative"
       >
-        <div class="img-overlay w-full h-full absolute top-0 left-0"></div>
+        <div
+          class="img-overlay w-full h-full absolute top-0 left-0 z-[-4]"
+        ></div>
         <img
-          class="hero-img w-full h-full object-cover top-0 left-0 absolute"
+          class="hero-img w-full h-full object-cover top-0 left-0 absolute z-[-5]"
           src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/art-of-fragrances/header-art-of-fragrances.jpg?rev=61ffae46966c44aa931a5c7a326985f2&cx=0.49&cy=0.47&cw=1920&ch=800&blr=False&hash=671442CEE9F5BCCA19BDE88D9FB707FA"
           alt=""
         />
         <nav
-          class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-50 hover:bg-white hover:text-[#3d3d3d] transition-all duration-300"
+          class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-[70] hover:bg-white hover:text-[#3d3d3d] transition-all duration-300"
         >
           <button id="hamburger-btn" class="text-2xl">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <div class="flex flex-col items-center">
-            <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
-            <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+          <div class="flex flex-col items-center text-center">
+            <a href="index.html">
+              <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+              <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+            </a>
           </div>
           <div></div>
         </nav>
         <div
           id="menu"
-          class="text-[#4A4A4A] bg-white h-screen xl:w-[28%] lg:w-[40%] md:w-[50%] w-full absolute top-0 left-0 hidden z-[70]"
+          class="text-[#4A4A4A] bg-white h-screen xl:w-[28%] lg:w-[40%] md:w-[50%] w-full absolute top-0 left-0 hidden z-[100]"
         >
           <button
             id="closeMenu"
@@ -69,31 +77,31 @@
           <div class="px-6 h-full pt-14">
             <div class="times overflow-y-scroll h-[63%] flex flex-col">
               <a
-                href="Group/index.html"
+                href="Aryan (Group)/index.html"
                 class="flex justify-between items-center py-6 mt-3 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                 ><p class="pl-4">Group</p>
                 <i class="fa-solid fa-chevron-right text-sm mr-2"></i
               ></a>
               <a
-                href="Commitment/index.html"
+                href="Deepak (Commitment)/index.html"
                 class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                 ><p class="pl-4">Commitments</p>
                 <i class="fa-solid fa-chevron-right text-sm mr-2"></i
               ></a>
               <a
-                href="Brand/branc_index.html"
+                href="Abhinav (Brand)/branc_index.html"
                 class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                 ><p class="pl-4">Brands</p>
                 <i class="fa-solid fa-chevron-right text-sm mr-2"></i
               ></a>
               <a
-                href="Beauty Science & Technology/index.html"
+                href="Zafar (Beauty Science & Technology)/index.html"
                 class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                 ><p class="pl-4">Beauty Science & Technology</p>
                 <i class="fa-solid fa-chevron-right text-sm mx-2"></i
               ></a>
               <a
-                href="Careers/index.html"
+                href="Himanshu (Careers)/index.html"
                 class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300"
                 ><p class="pl-4">Career</p>
                 <i class="fa-solid fa-chevron-right text-sm mr-2"></i
@@ -141,36 +149,24 @@
         </div>
         <div
           id="overlay"
-          class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[69]"
+          class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[80]"
         ></div>
         <div
-          class="flex flex-col 2xl:top-[60%] xl:top-[50%] lg:top-[45%] top-[65%] 2xl:pl-32 md:pl-20 pl-10 2xl:w-full lg:w-[60%] w-full absolute z-10"
+          class="flex flex-col 2xl:top-[60%] xl:top-[50%] lg:top-[45%] top-[65%] 2xl:pl-32 md:pl-20 pl-3 2xl:w-full lg:w-[60%] w-full absolute z-[90]"
         >
           <h1
             class="times 2xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-medium tracking-widest pb-5"
           >
             The Art & Science of Fragrance
           </h1>
-          <!-- <a
-            class="text-[#3D3D3D] no-underline text-[#3d3d3d] bg-white 2xl:w-[25.5%] xl:w-[53%] lg:w-[70%] md:w-[52%] w-[64%] px-5 py-1 rounded-full hover:text-white hover:bg-[#3D3D3D] transition-all duration-300"
-            href="https://www.loreal.com/en/"
-            >A discovery journey in our world of fragnances</a
-          > -->
-<!-- ======= -->
           <a
             class="text-[#3D3D3D] no-underline text-[#3d3d3d] bg-white 2xl:w-[25.5%] xl:w-[53%] lg:w-[70%] md:w-[52%] sm:w-[64%] w-[90%] px-5 py-1 rounded-full hover:text-white hover:bg-[#3D3D3D] transition-all duration-300 sm:text-normal text-sm"
             href="https://www.loreal.com/en/"
           >
             A discovery journey in our world of fragnances</a
           >
-<!-- >>>>>>> c27b18584f03c367e259442927948e68edf4b450 -->
         </div>
-        <!-- <a
-          class="text-[#3D3D3D] no-underline text-[#3d3d3d] bg-white px-5 py-1 rounded-full top-[70%] left-[6%] absolute hover:text-white hover:bg-[#3D3D3D] transition-all duration-300"
-          href="https://www.loreal.com/en/"
-          >A discovery journey in our world of fragnances</a
-        > -->
-        <div class="absolute bottom-[-52px] w-full z-40">
+        <div class="absolute bottom-[-52px] w-full z-[90]">
           <form
             class="shadow-2xl bg-white 2xl:w-[60%] lg:w-[50%] w-[90%] mx-auto flex flex-col items-center pt-3 rounded-2xl"
             action=""
@@ -204,10 +200,10 @@
 
     <section id="inspired">
       <div
-        class="md:flex md:justify-between xl:pl-28 md:pl-20 lg:py-12 md:py-10 sm:py-8 py-6 md:mt-0 mt-20"
+        class="md:flex md:justify-between xl:pl-28 md:pl-20 lg:py-12 md:py-10 sm:py-8 pb-10 lg:mt-10 md:mt-24"
       >
         <div
-          class="lg:w-[25%] md:w-[28%] sm:w-full md:text-left sm:text-center text-center lg:pt-16 md:pt-10 lg:px-0 md:px-0 sm:px-6"
+          class="lg:w-[25%] md:w-[28%] sm:w-full md:text-left sm:text-center text-center lg:pt-16 md:pt-10 pt-16 lg:px-0 md:px-0 sm:px-6"
         >
           <p class="font-['Times_New_Roman'] font-semibold">Discover</p>
           <h3
@@ -224,60 +220,74 @@
         <div
           class="inspired inspired-cards lg:w-[73%] md:w-[68%] sm:w-full grid grid-flow-col gap-4 overflow-x-scroll text-white font-bold text-center px-4 pt-8 pb-12"
         >
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/commitments/americas-cup/card-amcup.jpg?rev=62ad7e6c5682437594f9a98c1ad3eb07&cx=0.45&cy=0.35&cw=216&ch=400&blr=False&hash=93B4024C4BAAAE09F4C521805393E3A1)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/commitments/americas-cup/card-amcup.jpg?rev=62ad7e6c5682437594f9a98c1ad3eb07&cx=0.45&cy=0.35&cw=216&ch=400&blr=False&hash=93B4024C4BAAAE09F4C521805393E3A1)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
-              <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                America’s Cup: L’Oréal Enters the Race and Sponsors the Orient
-                Express Racing Team
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
+                <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                  America’s Cup: L’Oréal Enters the Race and Sponsors the Orient
+                  Express Racing Team
+                </p>
+              </a>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/5-science-and-technology/airlight/airlight-card.jpg?rev=a5728869861749b198f2f2a00c48a807&cx=0.53&cy=0.3&cw=216&ch=400&blr=False&hash=C62A3D5F97C889D5FB43AD1C06D2BD11)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/5-science-and-technology/airlight/airlight-card.jpg?rev=a5728869861749b198f2f2a00c48a807&cx=0.53&cy=0.3&cw=216&ch=400&blr=False&hash=C62A3D5F97C889D5FB43AD1C06D2BD11)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">
-                Science and Technology
-              </p>
-              <p class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font">
-                AirLight Pro : CES® 2024 Innovation Award-Winning technology
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">
+                  Science and Technology
+                </p>
+                <p
+                  class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font"
+                >
+                  AirLight Pro : CES® 2024 Innovation Award-Winning technology
+                </p>
+              </a>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/le-visionnaire/card.jpg?rev=73a03192b92443eb9435976e77b2d938&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=1A641262C8E167754ED82328AD23AF8B)] flex items-end"
-          >
-            <p class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif">
-              <a href="">Le Visionnaire - Espace François Dalle</a>
-            </p>
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/le-visionnaire/card.jpg?rev=73a03192b92443eb9435976e77b2d938&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=1A641262C8E167754ED82328AD23AF8B)] flex items-end"
+            >
+              <p
+                class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg text-md pb-10 font-serif"
+              >
+                <a href="">Le Visionnaire - Espace François Dalle</a>
+              </p>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/ces-2023-hapta/masquecardwater-saver-v2.jpg?rev=db6a4b8d3acb48de8cd252a94a553ba2&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=440062DD13BF0CFBA7EF879CBCDD4F23)] flex items-end"
-          >
-            <p class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg font-serif">
-              <a href="">Make every drop count with water saver!</a>
-            </p>
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/ces-2023-hapta/masquecardwater-saver-v2.jpg?rev=db6a4b8d3acb48de8cd252a94a553ba2&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=440062DD13BF0CFBA7EF879CBCDD4F23)] flex items-end"
+            >
+              <p
+                class="lg:pb-12 sm:pb-10 lg:text-2xl md:text-lg text-md pb-8 font-serif"
+              >
+                <a href="">Make every drop count with water saver!</a>
+              </p>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
@@ -339,14 +349,14 @@
         </ul>
       </div>
       <div
-        class="carousel flex md:justify-center md:gap-6 sm:justify-between justify-evenly gap-5 items-center text-[#3D3D3D] absolute bottom-0 backdrop-blur-lg w-full py-5 md:px-0 px-5 border-t border-t-[#686A6C]"
+        class="carousel flex md:justify-center md:gap-6 sm:justify-between justify-evenly gap-5 items-center text-[#3D3D3D] absolute bottom-0 backdrop-blur-lg w-full py-5 px-5 border-t border-t-[#686A6C]"
       >
         <div
           class="flex items-center justify-center md:text-xl text-sm bg-white md:h-16 h-10 md:w-16 w-10 rounded-full hover:cursor-pointer"
         >
           <i class="fa-solid fa-arrow-left"></i>
         </div>
-        <div class="flex md:gap-5 sm:gap-20 gap-5 mx-auto">
+        <div class="flex md:gap-5 sm:gap-20 gap-5 sm:mx-0 mx-auto">
           <div
             class="bg-white py-8 md:w-24 w-16 md:h-24 h-16 flex sm:block hidden md:block items-center rounded-full opacity-50 hover:opacity-100 hover:cursor-pointer transition-all duraton-300"
           >
@@ -426,105 +436,124 @@
         <div
           class="inspired inspired-cards lg:w-[73%] md:w-[68%] sm:w-full grid grid-flow-col gap-4 overflow-x-scroll text-white font-bold text-center px-4 pt-8 pb-12"
         >
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/news-media/commitments/cdp-supplier-engagement/masquecard.jpg?rev=f253ba853ead4618aabf621fb150bb47&cx=0.51&cy=0.33&cw=216&ch=400&blr=False&hash=523BBA69556987345C93EAB59DF03968)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/news-media/commitments/cdp-supplier-engagement/masquecard.jpg?rev=f253ba853ead4618aabf621fb150bb47&cx=0.51&cy=0.33&cw=216&ch=400&blr=False&hash=523BBA69556987345C93EAB59DF03968)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">Commitments</p>
-              <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                L'Oréal is Recognized by CDP as a Leader on Supplier Engagement
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">Commitments</p>
+                <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                  L'Oréal is Recognized by CDP as a Leader on Supplier
+                  Engagement
+                </p>
+              </a>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/research-and-innovation/melasyl.jpg?rev=30b0a941e0e249ffa8d09338b80fc1c4&cx=0.54&cy=0.32&cw=216&ch=400&blr=False&hash=ED3C33ED5B913F3C746A81BA40914BB3)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/research-and-innovation/melasyl.jpg?rev=30b0a941e0e249ffa8d09338b80fc1c4&cx=0.54&cy=0.32&cw=216&ch=400&blr=False&hash=ED3C33ED5B913F3C746A81BA40914BB3)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">
-                Research and Innovation
-              </p>
-              <p class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font">
-                L’ORÉAL GROUPE LAUNCHES MELASYL
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">
+                  Research and Innovation
+                </p>
+                <p
+                  class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font"
+                >
+                  L’ORÉAL GROUPE LAUNCHES MELASYL
+                </p>
+              </a>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/3-commitments/external-recognition/equileap-2024-card.jpg?rev=dda859d13db94f8f8bce11b226ac0414&cx=0.54&cy=0.38&cw=216&ch=400&blr=False&hash=01B33459C6C347C8917A294CB2B7E555)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/3-commitments/external-recognition/equileap-2024-card.jpg?rev=dda859d13db94f8f8bce11b226ac0414&cx=0.54&cy=0.38&cw=216&ch=400&blr=False&hash=01B33459C6C347C8917A294CB2B7E555)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">Commitments</p>
-              <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                L’Oréal is among top 10 most gender-equitable companies in the
-                world ( Equileap)
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">Commitments</p>
+                <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                  L’Oréal is among top 10 most gender-equitable companies in the
+                  world ( Equileap)
+                </p>
+              </a>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/group/asmita-dubey-2023-global-marketer-of-the-year/asmita-card.jpg?rev=fbebab9b89bc4410b52890ec7b0bce93&cx=0.51&cy=0.47&cw=216&ch=400&blr=False&hash=7C99FD0B21918D37EF28D2B910009CB1)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/group/asmita-dubey-2023-global-marketer-of-the-year/asmita-card.jpg?rev=fbebab9b89bc4410b52890ec7b0bce93&cx=0.51&cy=0.47&cw=216&ch=400&blr=False&hash=7C99FD0B21918D37EF28D2B910009CB1)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
-              <p class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font">
-                Asmita Dubey, named 2023 Global Marketer of the Year by WFA
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
+                <p
+                  class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font"
+                >
+                  Asmita Dubey, named 2023 Global Marketer of the Year by WFA
+                </p>
+              </a>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/4-brands/miu-miu.png?rev=046fcb0f45c043e9904917ab8ebd4e57&cx=0.51&cy=0.47&cw=216&ch=400&blr=False&hash=4CA39029F9DF919C538E642EE751854A)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/press-releases/group/asmita-dubey-2023-global-marketer-of-the-year/asmita-card.jpg?rev=fbebab9b89bc4410b52890ec7b0bce93&cx=0.51&cy=0.47&cw=216&ch=400&blr=False&hash=7C99FD0B21918D37EF28D2B910009CB1)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
-              <p class="text-[#3d3d3d] md:text-lg text-sm font">
-                L'ORÉAL GROUPE SIGNS A LICENCE AGREEMENT WITH MIU MIU
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] md:px-3 px-1 bg-white rounded-b-2xl text-left"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
+                <p class="text-[#3d3d3d] md:text-lg text-sm font">
+                  L'ORÉAL GROUPE SIGNS A LICENCE AGREEMENT WITH MIU MIU
+                </p>
+              </a>
+            </div>
           </div>
-          <div
-            class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/default-assets/default-card-rh.jpg?rev=f14ff7d5cff74e4491e0f146d178968e&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=3B07A5099D4C47E12CE0A5255A5552D2)] flex items-end"
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <div
-              class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
-            ></div>
-            <a
-              href=""
-              class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              class="inspired-card w-[8rem] h-[16rem] md:w-[13rem] md:h-[23rem] shadow-2xl rounded-2xl bg-[url(https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/default-assets/default-card-rh.jpg?rev=f14ff7d5cff74e4491e0f146d178968e&cx=0.5&cy=0.5&cw=216&ch=400&blr=False&hash=3B07A5099D4C47E12CE0A5255A5552D2)] flex items-end"
             >
-              <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
-              <p class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font">
-                L’Oréal groupe chief corporate responsibility officer alexandra
-                palt to depart
-              </p>
-            </a>
+              <div
+                class="inspired-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"
+              ></div>
+              <a
+                href=""
+                class="md:h-[40%] h-[50%] bg-white rounded-b-2xl text-left md:px-3 px-1"
+              >
+                <p class="text-gray-300 font-serif text-xs pt-2">Group</p>
+                <p
+                  class="text-[#3d3d3d] md:text-[16px] md:text-lg text-sm font"
+                >
+                  L’Oréal groupe chief corporate responsibility officer
+                  alexandra palt to depart
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -545,35 +574,35 @@
               <li class="my-4">
                 <a
                   class="transition-all duration-300 hover:text-[#B3B3B3]"
-                  href="Group/index.html"
+                  href="Aryan (Group)/index.html"
                   >Group</a
                 >
               </li>
               <li class="my-4">
                 <a
                   class="transition-all duration-300 hover:text-[#B3B3B3]"
-                  href="Commitment/index.html"
+                  href="Deepak (Commitment)/index.html"
                   >Commitments</a
                 >
               </li>
               <li class="my-4">
                 <a
                   class="transition-all duration-300 hover:text-[#B3B3B3]"
-                  href="Brand/branc_index.html"
+                  href="Abhinav (Brand)/branc_index.html"
                   >Brands</a
                 >
               </li>
               <li class="my-4">
                 <a
                   class="transition-all duration-300 hover:text-[#B3B3B3]"
-                  href="Beauty Science & Technology/index.html"
+                  href="Zafar (Beauty Science & Technology)/index.html"
                   >Beauty Science</a
                 >
               </li>
               <li class="my-4">
                 <a
                   class="transition-all duration-300 hover:text-[#B3B3B3]"
-                  href="Careers/index.html"
+                  href="Himanshu (Careers)/index.html"
                   >Careers</a
                 >
               </li>
@@ -612,42 +641,42 @@
         <li>
           <a
             href="#"
-            class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+            class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
             >Cookie Policy</a
           >
         </li>
         <li>
           <a
             href="#"
-            class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+            class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
             >Terms of use</a
           >
         </li>
         <li>
           <a
             href="#"
-            class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+            class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
             >Privacy Policy</a
           >
         </li>
         <li>
           <a
             href="#"
-            class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+            class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
             >Our Policies around the world
           </a>
         </li>
         <li>
           <a
             href="#"
-            class="lg:text-sm text-xs hidden lg:block font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6"
+            class="lg:text-sm text-xs hidden lg:block font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300 mr-4 md:mr-6"
             >|
           </a>
         </li>
         <li>
           <a
             href="#"
-            class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline"
+            class="lg:text-sm text-xs font-thin text-[#999999] hover:text-[#3d3d3d] transition-all duration-300"
             >Accessbility assessment</a
           >
         </li>
@@ -680,6 +709,10 @@
         </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
   <script>
