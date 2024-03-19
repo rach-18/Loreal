@@ -20,8 +20,8 @@
 
     <!--  Header -->
 
-    <header class="text-white h-screen w-screen">
-        <div id="hero" class="w-full 2xl:h-full xl:h-[90%] lg:h-full h-[550px] relative">
+    <header class="text-white w-screen">
+        <div id="hero" class="w-full 2xl:h-90vh xl:h-90vh lg:h-90vh h-[550px] relative">
             <div class="img-overlay w-full h-full absolute top-0 left-0"></div>
             <img class="hero-img w-full h-full object-cover top-0 left-0 absolute"
                 src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/career-hero.jpg?rev=08fc60eb19a54a9da51d16a7a2451e69&cx=0.53&cy=0.33&cw=1920&ch=800&blr=False&hash=70D1B20068A18CE0B307A89BEEBE6E64"
@@ -106,13 +106,15 @@
             <div id="overlay" class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[69]"></div>
             <div
                 class="flex flex-col 2xl:top-[60%] xl:top-[50%] lg:top-[45%] top-[65%] 2xl:pl-32 pl-20 2xl:w-full lg:w-[60%] w-full absolute z-10 ">
-                <h1 class="times 2xl:text-6xl lg:text-5xl text-4xl font-medium tracking-widest pb-5">Freedom to Go beyond,<br>That’s the Beauty of L’Oréal.</h1>
+                <h1 class="times 2xl:text-6xl lg:text-5xl text-4xl font-medium tracking-widest pb-5">Freedom to Go
+                    beyond,<br>That’s the Beauty of L’Oréal.</h1>
             </div>
             <div class="absolute bottom-[-52px] w-full z-40">
                 <form
                     class="shadow-2xl bg-white 2xl:w-[60%] lg:w-[50%] w-[90%] mx-auto flex flex-col items-center pt-3 rounded-2xl"
                     action="">
-                    <p class="text-[#3d3d3d] times md:text-2xl text-base tracking-wider">Search more about L’Oréal Careers</p>
+                    <p class="text-[#3d3d3d] times md:text-2xl text-base tracking-wider">Search more about L’Oréal
+                        Careers</p>
                     <div class="flex border-t border-[#cdc4ba] w-full text-lg">
                         <input class="arial tracking-wider w-full px-10 text-[#cdc4ba] rounded-bl-2xl" type="text"
                             placeholder="Define your search...">
@@ -127,65 +129,19 @@
         </div>
     </header>
 
-    <script>
-        document.addEventListener('scroll', () => {
-            const nav = document.querySelector('.navbar');
-            if (window.scrollY > 0) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
 
-        // Function to toggle menu and overlay
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            const overlay = document.getElementById('overlay');
-            const body = document.body;
-            const navbar = document.querySelector('.navbar');
-
-            menu.classList.toggle('hidden');
-            overlay.classList.toggle('hidden');
-            // Toggle body scrolling
-            body.classList.toggle('no-scroll');
-            // Toggle menu-open class on navbar
-            navbar.classList.toggle('menu-open');
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const menu = document.getElementById('menu');
-            const overlay = document.getElementById('overlay');
-            const closeMenuBtn = document.getElementById('closeMenu');
-
-            // Event listener for hamburger button
-            document.getElementById('hamburger-btn').addEventListener('click', toggleMenu);
-
-            // Event listener for overlay
-            overlay.addEventListener('click', toggleMenu);
-
-            // Event listener for close menu button
-            if (closeMenuBtn) {
-                closeMenuBtn.addEventListener('click', function () {
-                    toggleMenu();
-                    // Hide the overlay
-                    overlay.classList.add('hidden');
-                });
-            }
-        });
-
-    </script>
 
     <!-- Main -->
 
-    <div class="flex-col  max-w-full pt-10 ">
+    <div class="flex-col  max-w-full pt-20">
 
-        <div class="ml-[-1rem] pl-10 text-[#3d3d3d] min-[320px]:text-sm pt-20 sm:ml-20 sm:pt-20 md:pt-20 lg:pt-10">
+        <div class="ml-[-1rem] pl-10 text-[#3d3d3d] min-[320px]:text-sm  sm:ml-20 sm:pt-20 md:pt-20 lg:pt-10">
             <h4>L'Oréal / <span class="font-medium">Freedom to Go beyond, That’s the Beauty of L’Oréal</span></h4>
         </div>
 
         <!--Explore-->
-        <div id="discover" class="block sm:block lg:flex xl:flex text-[#3D3D3D] pb-28">
-            <div class="w-[100%] sm:w-[80%] lg:w-[50%] xl:w-[50%] px-10 sm:ml-20 mt-20">
+        <div id="discover" class="block sm:block lg:flex xl:flex text-[#3D3D3D] pb-14">
+            <div class="w-[100%] sm:w-[80%] lg:w-[50%] xl:w-[50%] px-10 md:ml-20 mt-20">
                 <p class=" font-serif text-[#3d3d3d] tracking-wide font-semibold lg:text-base">Explore</p>
                 <h2 class="text-4xl text-[#3d3d3d] font-semibold tracking-wider my-5 leading-9 lg:text-3xl">Getting
                     hired at L’Oréal
@@ -353,15 +309,15 @@
                 Opportunities</button></div>
 
         <!--Explore Our Opportunities-->
-        <div class="block sm:block lg:block xl:flex w-[100%] px-8 lg:justify-center">
-            <div class="md:flex md:mx-12  sm:w-[80%] sm:pl-20 lg:w-[100%] xl:w-[50%]"><iframe width="496" height="311"
-                    src="https://www.youtube.com/embed/lSrC0-weRys" title="At home or office, together wherever"
-                    frameborder="0"
+        <div class="block sm:block lg:block xl:flex w-[100%] px-8  lg:justify-center">
+            <div class="md:flex md:mx-12  sm:w-[80%] sm:justify-center lg:w-[100%] xl:w-[50%]"><iframe width="496"
+                    height="311" src="https://www.youtube.com/embed/lSrC0-weRys"
+                    title="At home or office, together wherever" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
             <div
-                class="w-[100%] p-6 sm:w-[80%] md:pl-5 lg:w-[100%] xl:w-[50%] sm:pt-10 lg:pr-40 sm:pr-10 sm:pl-32 xl:pl-10 xl:pt-5 flex items-start flex-col">
+                class="w-[100%] p-6 sm:w-[80%] md:pl-5 lg:w-[100%] xl:w-[50%] sm:pt-10 lg:pr-40 sm:pr-10 sm:pl-32 md:ml-20 xl:pl-10 xl:pt-5 flex items-start flex-col">
                 <h1 class=" font-serif text-3xl text-[#3d3d3d] font-bold">We’re together, wherever</h1><br>
                 <p class="font-sans text-[#3d3d3d] font-normal">When we ask our employees their favourite part about
                     working at L’Oréal… most of them will say
@@ -372,7 +328,7 @@
 
         <!--Discover-->
         <div id="discover" class="sm:block lg:flex xl:flex text-[#3D3D3D] pt-20 pb-28">
-            <div class="w-[100%] sm:w-[80%] lg:w-[50%] xl:w-[50%] px-10 lg:ml-20 lg:mt-20">
+            <div class="w-[100%] sm:w-[80%] lg:w-[50%] xl:w-[50%] px-10 md:ml-20 lg:ml-20 lg:mt-20">
                 <p class="font-serif tracking-wide text-[#3d3d3d] font-semibold lg:text-base">Discover</p>
                 <h2 class="text-4xl font-semibold tracking-wider text-[#3d3d3d] my-5 leading-9 lg:text-3xl">Youth have
                     the power!
@@ -467,7 +423,7 @@
         </div>
 
         <!--How do you define beauty? -->
-        <div class=" sm:block lg:flex xl:flex xl:pl-28 min-[1440px]:ml-20 px-5 sm:pr-5 pt-10 pb-10">
+        <div class=" sm:block lg:flex xl:flex xl:pl-28 min-[1440px]:ml-20 md:ml-20 px-10 sm:pr-5 pt-10 pb-10">
             <div class="w-[100%] sm:w-[90%] lg:w-[60%] xl:w-[40%] pr-6 ">
                 <h2 class="text-2xl font-serif text-[#3d3d3d] font-semibold lg:text-3xl">How do you define beauty?</h2>
                 <br>
@@ -485,7 +441,7 @@
             </div>
         </div>
         <div class=" w-full mt-12">
-            <div class="flex px-5 justify-center font-serif font-semibold text-[#3d3d3d] text-3xl">
+            <div class="flex px-5 justify-center text-center font-serif font-semibold text-[#3d3d3d] text-2xl">
                 <h1>Show us how you will define beauty.</h1>
             </div>
             <div class="flex justify-center mt-10 mb-10"><button
@@ -618,5 +574,52 @@
     </footer>
 
 </body>
+<script>
+    document.addEventListener('scroll', () => {
+        const nav = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    // Function to toggle menu and overlay
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+        const body = document.body;
+        const navbar = document.querySelector('.navbar');
+
+        menu.classList.toggle('hidden');
+        overlay.classList.toggle('hidden');
+        // Toggle body scrolling
+        body.classList.toggle('no-scroll');
+        // Toggle menu-open class on navbar
+        navbar.classList.toggle('menu-open');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+        const closeMenuBtn = document.getElementById('closeMenu');
+
+        // Event listener for hamburger button
+        document.getElementById('hamburger-btn').addEventListener('click', toggleMenu);
+
+        // Event listener for overlay
+        overlay.addEventListener('click', toggleMenu);
+
+        // Event listener for close menu button
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', function () {
+                toggleMenu();
+                // Hide the overlay
+                overlay.classList.add('hidden');
+            });
+        }
+    });
+
+</script>
 
 </html>
