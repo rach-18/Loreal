@@ -56,12 +56,12 @@ I would like to express my gratitude to everyone who contributed to the developm
 ### Project Contirbutors: 
 *"Deepak kumar"*
 
-#### Project Lead **Rachita Pradhan** 
+#### Project Lead *"Rachita Pradhan"* 
 Project Lead, responsible for overseeing the development and ensuring alignment with the original L'Oréal website's vision.
 Special Thanks
 We extend our gratitude to the original L'Oréal  website development team for creating an inspiring website that served as the foundation for this project.
 
-#### Special Thanks to Mentor **Ananya juneja**
+#### Special Thanks to Mentor *"Ananya juneja"*
 I would like to extend my heartfelt gratitude to my mentor, Ananya juneja, for being the guiding force behind the successful completion of my project on the L'Oréal   website clone.
 
 #### Learning Resources
