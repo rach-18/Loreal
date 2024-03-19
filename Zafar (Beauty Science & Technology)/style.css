@@ -95,3 +95,78 @@ footer .social{
     border-radius: 100%;
     background-color: #DBD9D6;
   }
+  .inspired-cards::-webkit-scrollbar {
+    height: 6px;
+    background-color: #aaa;
+    border-radius: 5px;
+  }
+   .inspired-overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 15px;
+  }
+  
+   .inspired:hover .inspired-overlay {
+    opacity: 1;
+  }
+  
+   .inspired-card {
+    transition: all;
+    transition-duration: 300ms;
+  }
+  
+   .inspired:hover .inspired-card:hover {
+    cursor: pointer;
+    transform: scale(1);
+  }
+  
+   .inspired-card:hover .inspired-overlay {
+    opacity: 0;
+  }
+  
+   .inspired:hover .inspired-card {
+    transform: scale(0.95);
+  }
+   .shadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+   .gradient{
+    filter: brightness(80%)
+  }
+   .cards-overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 15px;
+  }
+  
+   .cards:hover .cards-overlay {
+    opacity: 1;
+  }
+  
+   .cards-card {
+    transition: all;
+    transition-duration: 300ms;
+  }
+  
+   .cards:hover .cards-card:hover {
+    cursor: pointer;
+    transform: scale(1);
+  }
+  
+   .cards-card:hover .cards-overlay {
+    opacity: 0;
+  }
+  
+   .cards:hover .cards-card {
+    transform: scale(0.95);
+  }
+   .cards-cards::-webkit-scrollbar {
+    height: 6px;
+    background-color: #aaa;
+    border-radius: 5px;
+  }
+  
+   .cards-cards::-webkit-scrollbar-thumb {
+    background-color: #3D3D3D;
+    border-radius:5px;
+  }
