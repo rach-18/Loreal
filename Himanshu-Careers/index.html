@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    L’Oréal Groupe - Freedom to Go beyond, That’s the Beauty of L’Oréal
+  </title>
+  <link rel="icon" type="image/x-icon" href="o-solid.svg" />
+  <!-- <script
+      src="https://kit.fontawesome.com/42038edb06.js"
+      crossorigin="anonymous"
+    ></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/0f9e72426345e4f7fd0fa8ca9f8a309e?family=Gomme+Sans+W04+Regular"
+    rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/0976a2619014c5855690b7509fab4c6e?family=Helvetica+Now+Display"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="output.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--  Header -->
+
+  <header class="text-white h-screen w-screen">
+    <div id="hero" class="w-full 2xl:h-90vh xl:h-90vh lg:h-90vh h-[550px] relative">
+      <div class="img-overlay w-full h-full absolute top-0 left-0"></div>
+      <img class="hero-img w-full h-full object-cover top-0 left-0 absolute"
+        src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/career-hero.jpg?rev=08fc60eb19a54a9da51d16a7a2451e69&cx=0.53&cy=0.33&cw=1920&ch=800&blr=False&hash=70D1B20068A18CE0B307A89BEEBE6E64"
+        alt="" />
+      <nav
+        class="navbar flex justify-between py-1 px-4 items-center w-full fixed top-0 z-50 hover:bg-white hover:text-[#3d3d3d] transition-all duration-300">
+        <button id="hamburger-btn" class="text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="flex flex-col items-center text-center">
+          <a href="../index.html">
+            <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+            <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+          </a>
+        </div>
+        <div></div>
+      </nav>
+      <div id="menu"
+        class="text-[#4A4A4A] bg-white h-screen xl:w-[28%] lg:w-[40%] md:w-[50%] w-full absolute top-0 left-0 hidden z-[70]">
+        <button id="closeMenu" class="absolute top-0 left-0 p-4 md:hidden block">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+          <i class="fa-solid fa-times text-gray-500 text-2xl"></i>
+        </button>
+        <div class="px-6 h-full pt-14">
+          <div class="times overflow-y-scroll h-[63%] flex flex-col">
+            <a href="../Aryan (Group)/index.html"
+              class="flex justify-between items-center py-6 mt-3 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300">
+              <p class="pl-4">Group</p>
+              <i class="fa-solid fa-chevron-right text-sm mr-2"></i>
+            </a>
+            <a href="../Deepak (Commitment)/index.html"
+              class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300">
+              <p class="pl-4">Commitments</p>
+              <i class="fa-solid fa-chevron-right text-sm mr-2"></i>
+            </a>
+            <a href="../Abhinav (Brand)/branc_index.html"
+              class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300">
+              <p class="pl-4">Brands</p>
+              <i class="fa-solid fa-chevron-right text-sm mr-2"></i>
+            </a>
+            <a href="../Zafar (Beauty Science & Technology)/index.html"
+              class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300">
+              <p class="pl-4">Beauty Science & Technology</p>
+              <i class="fa-solid fa-chevron-right text-sm mx-2"></i>
+            </a>
+            <a href="index.html"
+              class="flex justify-between items-center py-6 border-b border-b-[#EBEBEB] tracking-wider text-xl font-bold hover:text-[#cccccc] transition-all duration-300">
+              <p class="pl-4">Career</p>
+              <i class="fa-solid fa-chevron-right text-sm mr-2"></i>
+            </a>
+          </div>
+          <div class="text-xs font-bold px-20 mx-auto border-b border-b-[#EBEBEB] pb-5 pt-7 tracking-wider">
+            <a class="flex justify-evenly" href="#p">
+              <i class="fa-solid fa-arrow-trend-up text-base"></i>
+              <p>OR.PA</p>
+              <p class="text-[#c4c4c4]">€ 446.15</p>
+              <p>-1.13%</p>
+            </a>
+          </div>
+          <div class="flex flex-col items-center text-sm font-bold border-b border-b-[#EBEBEB] py-4">
+            <div class="flex justify-between w-full px-12 mb-2">
+              <a href="#p">Journalists</a>
+              <a href="#p">Suppliers</a>
+            </div>
+            <div>
+              <a href="#p">Investors & Shareholders</a>
+            </div>
+          </div>
+          <div class="flex justify-between py-4 text-sm text-black">
+            <div class="flex items-center gap-1">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <p>Accessibility</p>
+            </div>
+            <div class="flex items-center gap-1">
+              <i class="fa-solid fa-globe"></i>
+              <p>Location</p>
+            </div>
+            <div class="border border-black">
+              <select name="lang" id="lang">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="zl">ZH</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="overlay" class="hidden bg-black opacity-50 fixed top-0 left-0 w-full h-full z-[69]"></div>
+      <div
+        class="flex flex-col 2xl:top-[60%] xl:top-[50%] lg:top-[45%] top-[65%] 2xl:pl-32 pl-20 2xl:w-full lg:w-[60%] w-full absolute z-10">
+        <h1 class="times 2xl:text-6xl lg:text-5xl text-4xl font-medium tracking-widest pb-5">
+          Freedom to Go beyond,<br />That’s the Beauty of L’Oréal.
+        </h1>
+      </div>
+      <div class="absolute bottom-[-52px] w-full z-40">
+        <form
+          class="shadow-2xl bg-white 2xl:w-[60%] lg:w-[50%] w-[90%] mx-auto flex flex-col items-center pt-3 rounded-2xl"
+          action="">
+          <p class="text-[#3d3d3d] times md:text-2xl text-base tracking-wider">
+            Search more about L’Oréal Careers
+          </p>
+          <div class="flex border-t border-[#cdc4ba] w-full text-lg">
+            <input class="arial tracking-wider w-full px-10 text-[#cdc4ba] rounded-bl-2xl" type="text"
+              placeholder="Define your search..." />
+            <button
+              class="text-[#3D3D3D] bg-[#cdc4ba] w-2/5 py-3 rounded-br-2xl md:block hidden hover:text-white hover:bg-[#3D3D3D] hover:border-[#3D3D3D] transition-all duration-300">
+              Seacrh
+            </button>
+            <button
+              class="text-[#3D3D3D] bg-[#cdc4ba] w-[20%] py-3 rounded-br-2xl md:hidden block hover:text-white hover:bg-[#3D3D3D] hover:border-[#3D3D3D] transition-all duration-300">
+              <i class="md:hidden block fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- <script>
+      document.addEventListener("scroll", () => {
+        const nav = document.querySelector(".navbar");
+        if (window.scrollY > 0) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      // Function to toggle menu and overlay
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay");
+        const body = document.body;
+        const navbar = document.querySelector(".navbar");
+
+        menu.classList.toggle("hidden");
+        overlay.classList.toggle("hidden");
+        // Toggle body scrolling
+        body.classList.toggle("no-scroll");
+        // Toggle menu-open class on navbar
+        navbar.classList.toggle("menu-open");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.getElementById("menu");
+        const overlay = document.getElementById("overlay");
+        const closeMenuBtn = document.getElementById("closeMenu");
+
+        // Event listener for hamburger button
+        document
+          .getElementById("hamburger-btn")
+          .addEventListener("click", toggleMenu);
+
+        // Event listener for overlay
+        overlay.addEventListener("click", toggleMenu);
+
+        // Event listener for close menu button
+        if (closeMenuBtn) {
+          closeMenuBtn.addEventListener("click", function () {
+            toggleMenu();
+            // Hide the overlay
+            overlay.classList.add("hidden");
+          });
+        }
+      });
+    </script> -->
+
+  <!-- Main -->
+
+  <div class="flex-col max-w-full pt-10">
+    <div class="ml-[-1rem] pl-10 text-[#3d3d3d] min-[320px]:text-sm pt-20 sm:ml-20 sm:pt-20 md:pt-20 lg:pt-10">
+      <h4>
+        L'Oréal /
+        <span class="font-medium">Freedom to Go beyond, That’s the Beauty of L’Oréal</span>
+      </h4>
+    </div>
+
+    <!--Explore-->
+    <div id="discover" class="block sm:block lg:flex xl:flex text-[#3D3D3D] pb-28">
+      <div class="w-[100%] sm:w-[80%] lg:w-[50%] xl:w-[50%] px-10 sm:ml-20 mt-20">
+        <p class="font-serif text-[#3d3d3d] tracking-wide font-semibold lg:text-base">
+          Explore
+        </p>
+        <h2
+          class="text-4xl text-[#3d3d3d] font-[Helvetica_Now_Display] font-semibold tracking-wider my-5 leading-9 lg:text-3xl">
+          Getting hired at L’Oréal
+        </h2>
+        <p class="leading-6 text-[#3d3d3d] font-normal lg:text-base">
+          We know, the recruitment process can be a stressful one… so at
+          L’Oréal, we try to take out some of the guesswork. Our recruiters
+          around the world are happy to share some of their inside tips to
+          increase your chance at getting hired.
+        </p>
+      </div>
+      <div class="discover w-full relative lg:pt-14">
+        <div
+          class="discover-cards grid grid-flow-col auto-cols-[27%] overflow-y-hidden overflow-x-scroll gap-4 pl-10 w-full">
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <img class="discover-img rounded-2xl object-cover bg-gradient-to-b from-transparent to-black"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/there-is-more-than-one-open-door-to-loreal.jpg?rev=a789604a44eb4e3fb52e5ca1f20b3425&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=8343056C1F4EF6315D845E912892B917"
+              alt="" />
+            <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
+              <p class="text-white font-bold text-center text-xs md:text-xl tracking-wider">
+                There is more than one open door to L'Oreal
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <img class="rounded-2xl object-cover"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/stand-out-to-our-recruiters.jpg?rev=712e7ff54fa5401db213f625588fa3d1&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=8E169891C41306DCFDDFCFF16C50FE1E"
+              alt="" />
+            <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
+              <p class="text-white font-bold text-center text-xs md:text-xl tracking-wider">
+                Stand Out To Your Recruiters
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/loreal-on-tiktok.jpg?rev=50c35b5afbe24bfb9af76c402b9076c6&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=9F0AE36D185A1D3D3C1A44032261E9D6"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white times text-center text-sm md:text-xl font-semibold tracking-wider leading-6">
+                L'Oreal on Tic-Tok
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/brandstorm-2022/everything-you-need-to-know-about-getting-hired.jpg?rev=da42ec8215e7423ea4db492dd68b5849&cx=0.43&cy=0.45&cw=216&ch=400&blr=False&hash=C26E7BF7AB6806D02B953578965E7114"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white times text-center text-sm md:text-xl font-semibold tracking-wider leading-6">
+                Everything you need to know about getting hired
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LifeAtLoreal -->
+    <div id="discover" class="block sm:block lg:flex xl:flex text-[#3D3D3D] pb-28">
+      <div class="w-[100%] sm:w-[80%] lg:w-[50%] xl:w-[50%] px-10 md:ml-20 mt-20">
+        <p class="font-serif text-[#3d3d3d] tracking-wide font-semibold lg:text-base">
+          Your inside look at
+        </p>
+        <h2 class="text-4xl text-[#3d3d3d] font-semibold tracking-wider my-5 leading-9 lg:text-3xl">
+          #lifeatLOréal
+        </h2>
+        <p class="leading-6 text-[#3d3d3d] font-normal lg:text-base">
+          Whether you’re based in Mexico, Singapore, France, or Dubai (or
+          anywhere in between) you’ll find a common thread. We love our
+          colleagues! We come from over 162 nationalities and are continuously
+          learning, pushing ourselves (and each other) out of our comfort
+          zones! We love to try new things and we’re not afraid to make
+          mistakes, especially if it’s in search for something new and unheard
+          of (hello EpiSkin!). At over 110 years old, L’Oréal is rich in
+          history but still runs with a start-up mentality where freedom
+          within a frame is the mantra. Finally, our passion for our jobs
+          extends beyond our office walls… we’re determined to make a
+          difference. Does this sound like the place for you?
+        </p>
+      </div>
+      <div class="discover w-full relative lg:pt-20">
+        <div
+          class="discover-cards grid grid-flow-col auto-cols-[27%] overflow-y-hidden overflow-x-scroll gap-4 pl-10 w-full">
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <img class="discover-img rounded-2xl object-cover bg-gradient-to-b from-transparent to-black"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/9-things-about-our-loral-culture.jpg?rev=43aea22d5c264d1486016b33b4cc5774&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=A29CC5AC99A6389461F499F497D2B2A7"
+              alt="" />
+            <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
+              <p class="text-white font-bold text-center text-xs md:text-xl tracking-wider">
+                9 Things about our L'Oreal culture
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <img class="rounded-2xl object-cover"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/about-loreal/our-purpose/landing-page/story-images/beautytech.jpg?rev=81a2e8b2f68b45b094894f038e29548d&cx=0.65&cy=0.3&cw=216&ch=400&blr=False&hash=D3768EEC5CBF7A17E399AAE16CF09C75"
+              alt="" />
+            <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
+              <p class="text-white font-bold text-center text-xs md:text-xl tracking-wider">
+                We Design Beauty Technology that Makes People’s Lives Easier
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/career-ladder-or-jungle-gym.jpg?rev=153eaaf4e32042d794cd8fdb7ee141bb&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=57D9E15894B7E5CB681EB9044042C68E"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white times text-center text-xs md:text-2xl font-semibold tracking-wider leading-6">
+                Career ladder, or jungle gym
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/offices-to-dream-about.jpg?rev=a34ee56d694741adaf60cc8e84c496ee&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=CF3CC0B53CF8A6E4E6EAA523DB208760"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white times text-xs md:text-2xl font-semibold md:tracking-wider md:leading-6">
+                Offices to dream about
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/life-as-a-loral-intern.jpg?rev=73b0084060d94bdc8974006f396f2ef1&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=DC6D5BA6B452603577705B638510E421"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white times text-center text-xs md:text-2xl font-semibold tracking-wider leading-6">
+                Life as a L’Oréal Intern
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- button -->
+    <div class="flex justify-center mb-24">
+      <button
+        class="rounded-2xl text-[#3d3d3d] bg-[#cdc4ba] -400 px-4 py-1 font-semibold hover:bg-[#3d3d3d] hover:text-white duration-300">
+        Explore Our Opportunities
+      </button>
+    </div>
+
+    <!--Explore Our Opportunities-->
+    <div class="block sm:block lg:block xl:flex w-[100%] px-8 lg:justify-center">
+      <div class="md:flex md:mx-12 sm:w-[80%] sm:pl-20 lg:w-[100%] xl:w-[50%]">
+        <iframe width="496" height="311" src="https://www.youtube.com/embed/lSrC0-weRys"
+          title="At home or office, together wherever" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div
+        class="w-[100%] p-6 sm:w-[80%] md:pl-5 lg:w-[100%] xl:w-[50%] sm:pt-10 lg:pr-40 sm:pr-10 sm:pl-32 xl:pl-10 xl:pt-5 flex items-start flex-col">
+        <h1 class="font-serif text-3xl text-[#3d3d3d] font-bold">
+          We’re together, wherever
+        </h1>
+        <br />
+        <p class="font-sans text-[#3d3d3d] font-normal">
+          When we ask our employees their favourite part about working at
+          L’Oréal… most of them will say things like it’s the creativity, the
+          freedom to be yourself, or the ability to try new things without the
+          fear of failure. But the one thing they love the most? It’s the
+          people.
+        </p>
+      </div>
+    </div>
+
+    <!--Discover-->
+    <div id="discover" class="sm:block lg:flex xl:flex text-[#3D3D3D] pt-20 pb-28">
+      <div class="w-[100%] sm:w-[80%] lg:w-[50%] xl:w-[50%] px-10 lg:ml-20 lg:mt-20">
+        <p class="font-serif tracking-wide text-[#3d3d3d] font-semibold lg:text-base">
+          Discover
+        </p>
+        <h2 class="text-4xl font-semibold tracking-wider text-[#3d3d3d] my-5 leading-9 lg:text-3xl">
+          Youth have the power!
+        </h2>
+        <p class="leading-6 font-normal text-[#3d3d3d] lg:text-base">
+          Our Global L’Oréal for Youth Program, launched in 2021 is not only
+          about offering 25,000 jobs per year to those under 30, but also
+          about boosting the employability of young people (through
+          Masterclasses and coaching) whether choosing to work at L’Oréal or
+          not. Discover the ways we’re upskilling young people and ways to get
+          recruited.
+        </p>
+      </div>
+      <div class="discover w-full relative lg:pt-10 xl:pt-10">
+        <div
+          class="discover-cards grid grid-flow-col auto-cols-[27%] overflow-y-hidden overflow-x-scroll gap-4 pl-10 w-full">
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <img class="discover-img rounded-2xl object-cover"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/commitments/l-oreal-for-youth-rework-2023/lfy2023masquecard.jpg?rev=adb039a226224d9d9ff7a56b2707e246&cx=0.46&cy=0.23&cw=216&ch=400&blr=False&hash=6E6B45D0948367545B2DDDAF7C19FEDF"
+              alt="" />
+            <div class="absolute bottom-0 py-3 px-3 rounded-b-2xl">
+              <p class="text-white text-sm md:text-xl times md:tracking-widest lg:tracking-tight">
+                Commitments
+              </p>
+              <p
+                class="font-bold text-white text-center text-sm md:text-xl md:tracking-wider lg:tracking-tight lg:text-base">
+                L'Oreal for Youth: A Global Program in favour of Youth
+                Employment
+              </p>
+            </div>
+          </div>
+
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/brandstorm-2023/masquecardbstorm.jpg?rev=023a3b61dd894c9fbba5d942b23491cc&cx=0.54&cy=0.48&cw=216&ch=400&blr=False&hash=0ABCB04705759ADB9606074CC13F76C1"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p
+                class="text-white times text-center text-sm md:text-xl font-semibold tracking-wider leading-6 lg:tracking-tight lg:text-base">
+                Discover L'Oreal Brandstorm 2024 Mission
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/articles-media/masterclass22/group-8989.jpg?rev=7157d321988941d1a79177f75d51a2bd&cx=0.54&cy=0.36&cw=216&ch=400&blr=False&hash=C3373FC6ED83D9A66CB62F8EED800F41"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white text-sm md:text-xl md:tracking-widest lg:tracking-tight">
+                Commitments
+              </p>
+              <p
+                class="font-bold text-white text-center text-sm md:text-xl tracking-wider leading-6 lg:tracking-tight lg:text-base">
+                L'Oreal Masterclass
+              </p>
+
+              <p></p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/becoming-a-loral-intern.jpg?rev=610c06283c394c2880ee4da157e94500&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=88DDDEECBBBB681AA9A2142383D6A920"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white times text-center text-sm md:text-xl font-semibold tracking-wider leading-6">
+                Becoming a L'Oreal Intern
+              </p>
+            </div>
+          </div>
+          <div class="discover-card flex flex-col justify-end relative shadow-2xl my-10 rounded-2xl">
+            <div class="discover-overlay absolute top-0 left-0 w-full h-full z-50 transition-all duration-300"></div>
+            <div class="gradient-bg absolute z-[-1] h-full w-full rounded-2xl"></div>
+            <img class="rounded-2xl object-cover w-full absolute z-[-2]"
+              src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/graduate-opportunities-at-loral.jpg?rev=b512baa8ad9b4626b9632321c530497a&cx=0.46&cy=0.28&cw=216&ch=400&blr=False&hash=8A1D30BFB5D1C3629FDDF90676BD2BD9"
+              alt="" />
+            <div class="absolute bottom-0 pb-14 px-3 rounded-b-2xl">
+              <p class="text-white times text-center text-2xl font-semibold tracking-wider leading-6">
+                Graduate Opportunities at L'Oreal
+              </p>
+
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--How do you define beauty? -->
+    <div class="sm:block lg:flex xl:flex xl:pl-28 min-[1440px]:ml-20 px-5 sm:pr-5 pt-10 pb-10">
+      <div class="w-[100%] sm:w-[90%] lg:w-[60%] xl:w-[40%] pr-6">
+        <h2 class="text-2xl font-serif text-[#3d3d3d] font-semibold lg:text-3xl">
+          How do you define beauty?
+        </h2>
+        <br />
+        <p class="lg:text-base">
+          Expressing your true self with all the confidence in the world.
+          That’s beauty to us. Maybe it’s your innovation, and your drive to
+          never stop asking why. Perhaps it’s the beauty in making a discovery
+          that reduces plastic consumption Supporting burn victims with a
+          product you created? That’s definitely beauty. Celebrating the
+          cultures of the 85k colleagues around you. Yep, that’s beauty too.
+          However you define beauty… if you’re looking for an environment with
+          growth, diversity, entrepreneurial spirt, and purpose… this is the
+          place for you.
+        </p>
+      </div>
+      <div class="w-[100%] sm:w-[80%] lg:mr-20 xl:w-[50%] sm:pt-5 xl:pr-10">
+        <img
+          src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/6-careers/loreal0302673bd.jpg?rev=5b92f493ce2d46d4ba154b53ab7c65e9&hash=8EA34EAD7E74AEC9F9CB523B581189A2"
+          alt="" />
+      </div>
+    </div>
+    <div class="w-full mt-12">
+      <div class="flex px-5 justify-center font-serif font-semibold text-[#3d3d3d] text-3xl">
+        <h1>Show us how you will define beauty.</h1>
+      </div>
+      <div class="flex justify-center mt-10 mb-10">
+        <button
+          class="rounded-2xl text-[#3d3d3d] bg-[#cdc4ba] -400 px-4 py-1 font-semibold hover:bg-[#3d3d3d] hover:text-white duration-300">
+          Explore Our Opportunities
+        </button>
+      </div>
+    </div>
+
+    <!--Executive Vice President-->
+    <div class="block sm:block lg:flex xl:flex sm:m-20 shadow-2xl xl:mx-40">
+      <div class="w-[100%] border-8 border-white lg:w-[50%] xl:w-[50%]">
+        <img
+          src="https://www.loreal.com/-/media/project/loreal/brand-sites/corp/master/lcorp/2-group/governance-and-ethics/comex/optimized-manifesto/image-8.jpg?rev=ba7d4f5e12184442a8be3dd4f601c41f&cx=0&cy=0&cw=500&ch=660&blr=False&hash=0F3C00C362367DAFEB91AE59ABB13408"
+          alt="" />
+      </div>
+      <div class="w-[100%] sm:w-[80%] lg:w-[50%] p-12 bg-white">
+        <h1 class="font-bold font-serif text-[#3d3d3d] lg:text-4xl md:text-3xl">
+          L’Oréal’s agility depends on the quality and diversity of our
+          employees.
+        </h1>
+        <br />
+        <p>
+          Human Relations at L’Oréal is first and foremost about our steadfast
+          conviction that our employees have always made, and will continue to
+          make, the difference. Maintaining a relationship based on trust and
+          respect, and encouraging a management style that leaves room for
+          initiative, cooperation and personal development; these are the
+          cornerstones of successful Human Relations. With the Group’s
+          transformation towards Beauty Tech, it needs to recruit a growing
+          number of people with hybrid profiles and skills that are ever more
+          diverse. L’Oréal also acts in line with its conviction that a policy
+          that promotes diversity and inclusion enables everyone – regardless
+          of their gender, ethnic origins or background – to give their best
+          within the company.
+        </p>
+        <br />
+        <h4 class="font-sans font-bold text-lg text-[#3d3d3d]">
+          Jean-Claude Le Grand
+        </h4>
+        <p class="text-[#3d3d3d]">Executive Vice-President Human Relations</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="xl:px-0 px-10 w-full">
+    <div class="xl:px-32 px-0 py-10 border-y border-y-[#C4C4C4] xl:flex xl:justify-between">
+      <div class="mb-8 flex flex-col">
+        <div class="flex justify-start">
+          <div class="flex flex-col items-center">
+            <h1 id="logo" class="uppercase text-3xl">L'Oréal</h1>
+            <p id="sub-logo" class="text-xs uppercase font-medium">Groupe</p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li class="my-4">
+              <a class="transition-all duration-300 hover:text-[#B3B3B3]" href="../Aryan (Group)/index.html">Group</a>
+            </li>
+            <li class="my-4">
+              <a class="transition-all duration-300 hover:text-[#B3B3B3]"
+                href="../Deepak (Commitment)/index.html">Commitments</a>
+            </li>
+            <li class="my-4">
+              <a class="transition-all duration-300 hover:text-[#B3B3B3]"
+                href="../Abhinav (Brand)/branc_index.html">Brands</a>
+            </li>
+            <li class="my-4">
+              <a class="transition-all duration-300 hover:text-[#B3B3B3]"
+                href="../Zafar (Beauty Science & Technology)/index.html">Beauty Science</a>
+            </li>
+            <li class="my-4">
+              <a class="transition-all duration-300 hover:text-[#B3B3B3]" href="index.html">Careers</a>
+            </li>
+          </ul>
+          <!-- <ul class="flex gap-5 text-[0.9rem]">
+                        <li><a href="#p">Journalists</a></li>
+                        <li><a href="#p">Suppliers</a></li>
+                        <li><a href="#p">Investors & Shareholders</a></li>
+                    </ul> -->
+        </div>
+      </div>
+      <div>
+        <ul
+          class="flex xl:gap-5 justify-between xl:border-b-0 xl:border-t-0 border-t border-b border-t-[#C4C4C4] border-b-[#C4C4C4] xl:py-0 py-5 xl:font-normal font-bold text-[0.9rem]">
+          <li><a href="#p">Journalists</a></li>
+          <li><a href="#p">Suppliers</a></li>
+          <li><a href="#p">Investors & Shareholders</a></li>
+        </ul>
+        <!-- <ul>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Group</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Commitments</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Brands</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Beauty Science</a></li>
+                    <li class="my-4"><a class="transition-all duration-300 hover:text-[#B3B3B3]" href="#p">Careers</a></li>
+                </ul> -->
+      </div>
+    </div>
+    <div class="text-[#B3B3B3]"></div>
+  </footer>
+  <div class="bg-[#9a9a9a] w-full h-[0.5px]"></div>
+  <footer class="bg-white md:flex md:items-center md:justify-between p-4 md:p-6 xl:p-8 my-3">
+    <ul class="flex items-center flex-wrap mb-6 md:mb-0 justify-center">
+      <li>
+        <a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Cookie Policy</a>
+      </li>
+      <li>
+        <a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Terms of use</a>
+      </li>
+      <li>
+        <a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">Our Policies around
+          the world
+        </a>
+      </li>
+      <li>
+        <a href="#" class="lg:text-sm text-xs hidden lg:block font-thin text-[#3D3D3D] hover:underline mr-4 md:mr-6">|
+        </a>
+      </li>
+      <li>
+        <a href="#" class="lg:text-sm text-xs font-thin text-[#3D3D3D] hover:underline">Accessbility assessment</a>
+      </li>
+    </ul>
+    <div class="flex justify-center space-x-6">
+      <a href="#"
+        class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-facebook-f social_fb">
+      </a>
+      <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-twitter social">
+      </a>
+      <a href="#"
+        class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-instagram-square social">
+      </a>
+      <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-linkedin-in social">
+      </a>
+      <a href="#" class="text-[#3D3D3D] hover:text-[#DBD9D6] hover:bg-[#3d3d3d] duration-300 fab fa-youtube social">
+      </a>
+    </div>
+  </footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  document.addEventListener("scroll", () => {
+    const nav = document.querySelector(".navbar");
+    if (window.scrollY > 0) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+
+  // Function to toggle menu and overlay
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    const overlay = document.getElementById("overlay");
+    const body = document.body;
+    const navbar = document.querySelector(".navbar");
+
+    menu.classList.toggle("hidden");
+    overlay.classList.toggle("hidden");
+    // Toggle body scrolling
+    body.classList.toggle("no-scroll");
+    // Toggle menu-open class on navbar
+    navbar.classList.toggle("menu-open");
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.getElementById("menu");
+    const overlay = document.getElementById("overlay");
+    const closeMenuBtn = document.getElementById("closeMenu");
+
+    // Event listener for hamburger button
+    document
+      .getElementById("hamburger-btn")
+      .addEventListener("click", toggleMenu);
+
+    // Event listener for overlay
+    overlay.addEventListener("click", toggleMenu);
+
+    // Event listener for close menu button
+    if (closeMenuBtn) {
+      closeMenuBtn.addEventListener("click", function () {
+        toggleMenu();
+        // Hide the overlay
+        overlay.classList.add("hidden");
+      });
+    }
+  });
+</script>
+
+</html>

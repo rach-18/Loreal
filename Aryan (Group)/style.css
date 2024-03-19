@@ -6,7 +6,7 @@
 }
 .group .linear_gradient{
   background: linear-gradient(180deg, rgba(0, 0, 0, .5) 0, transparent 20%, transparent 43%, rgba(0, 0, 0, .5));
-  height: 90vh;
+  /* height: 100vh; */
 }
 .group .font-serif{
   font-family: Halesworth,Times New Roman,Times,serif;
@@ -106,15 +106,78 @@
   background-color: #3D3D3D;
   border-radius:5px;
 }
-footer .social{ 
+.group footer .social{ 
   margin-right: 15px;
   padding: 14px;
   border-radius: 100%;
   background-color: #DBD9D6;
 }
+.group footer .social:hover{
+  background-color: #3D3D3D;
+}
 
-footer .social_fb{ 
+.group footer .social_fb{ 
   padding: 15px 17px;
   border-radius: 100%;
   background-color: #DBD9D6;
+}
+.group footer .social_fb:hover{
+  background-color: #3D3D3D;
+}
+.group #menu {
+  transition: left 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto; /* Allow scrolling within the menu */
+  /* z-index: 50; */
+}
+
+.group .navbar.menu-open:hover {
+  /* Override hover styles when menu is open */
+  background-color: transparent;
+  color: white;
+}
+
+.group #overlay {
+  transition: opacity 0.3s ease;
+}
+
+.group .no-scroll {
+  overflow: hidden;
+}
+
+
+.group .navbar.scrolled {
+  background-color: white;
+  color: #3d3d3d;
+  border-bottom: 0.5px solid #c4c4c4;
+}
+
+.group .img-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6));
+  z-index: -1;
+}
+
+.group .hero-img {
+  z-index: -2;
+}
+
+.group #logo {
+  font-family: "Gomme Sans W04 Regular";
+}
+
+.group #sub-logo {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.4rem;
+  font-size: 0.6rem;
+}
+
+.group .times {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.group .arial {
+  font-family: Arial, Helvetica, sans-serif;
 }
