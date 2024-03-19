@@ -26,11 +26,19 @@ Maintain a consistent look and feel with the rest of the cloned website.
 - HTML: For structuring the content of web pages.
 - CSS using Tailwind: For styling and enhancing the visual presentation of the website.
 ## Images:
-![home](https://github.com/rach-18/Loreal/assets/159279737/9a465f96-d754-4bf7-a03b-0058feeb647b)
-
 #### Commitments Section
 #### Home
-
+![home](https://github.com/rach-18/Loreal/assets/159279737/9a465f96-d754-4bf7-a03b-0058feeb647b)
+### 2nd Section
+![2nd section](https://github.com/rach-18/Loreal/assets/159279737/1bb39e35-84be-466c-8ca1-14043de3a7ee)
+### 3rd Section
+![3rd section](https://github.com/rach-18/Loreal/assets/159279737/1643ade8-3459-4133-aef1-b200e8e76615)
+### 4th Section
+![4th section](https://github.com/rach-18/Loreal/assets/159279737/a6003de3-2b8d-4d5c-8a36-7bc62f7d6119)
+### 5th Section
+![last section](https://github.com/rach-18/Loreal/assets/159279737/c68e15a1-7e8c-4e97-9982-cf65b3ec540d)
+### Footer
+![footer](https://github.com/rach-18/Loreal/assets/159279737/f0c5f247-e38d-42a0-a482-ee1ff25da051)
 
 ## Project Assigned
 - Assigned LOreal UI Clone 
