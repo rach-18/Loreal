@@ -1,11 +1,11 @@
 
 # L'Oréal Groupe Website - L'Oréal Groupe Website- *"Group"* Section
 
-Welcome to L'Oréal Project! This project aims to replicate and enhance the "Group" section of the L'Oréal website. By Recreating this Section We Intend to Flourish It's is on a mission to discover and spread ideas that spark imagination, embrace possibility and catalyze impact.
+Welcome to L'Oréal Project! This project aims to replicate and enhance the *"Group"* section of the L'Oréal website. By Recreating this Section We Intend to Flourish It's is on a mission to discover and spread ideas that spark imagination, embrace possibility and catalyze impact.
 
 ## Group Section
 
-In this section, we aim to mirror the original L'Oréal website's "Group" Section. Key features include:
+In this section, we aim to mirror the original L'Oréal website's *"Group"* Section. Key features include:
 
 - Responsive Design: Ensure the values section is visually appealing and functional on various devices.
 
@@ -33,7 +33,7 @@ In this section, we aim to mirror the original L'Oréal website's "Group" Sectio
 
 ## Acknowledgements
 
-I would like to express my gratitude to everyone who contributed to the development of the "Group" sections of this L'Oréal  website project.
+I would like to express my gratitude to everyone who contributed to the development of the *"Group"* sections of this L'Oréal  website project.
 
 
 ## Project Contributors
