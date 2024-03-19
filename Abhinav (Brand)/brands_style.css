@@ -46,7 +46,7 @@
 
 .brands_velocity {
   font-family: "Velocity - DEMO";
-  font-size: 3.3rem;
+  /* font-size: 3.3rem; */
   text-align: center;
 }
 
@@ -205,5 +205,24 @@ footer .social_fb {
   transition: all 300ms;
 }
 .loreal-cards:hover .loreal-cards-discover:hover {
+  transform: scale(1);
+}
+
+
+
+.brand-cards:hover .overlay {
+  opacity: 1;
+}
+.brand-cards-discover:hover .overlay {
+  opacity: 0;
+}
+.brand-cards:hover .brand-cards-discover {
+  transform: scale(0.96);
+}
+
+.brand-cards-discover {
+  transition: all 300ms;
+}
+.brand-cards:hover .brand-cards-discover:hover {
   transform: scale(1);
 }
