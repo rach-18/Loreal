@@ -117,7 +117,7 @@ This project was assigned by Geekster as a Major Project for a team of 6 members
 **JS:** For implementing interactive features and enhancing user experience.
 ## Installation
 
-Follow these simple steps to set up the TEDTALKS on your local machine:
+Follow these simple steps to set up the L'Oréal on your local machine:
 
 #### 1. Clone The Repository:
 
@@ -137,7 +137,7 @@ Open the index.html file in your preferred web browser to start exploring L'Oré
 
 Contributions are always welcome!
 
-We welcome contributions to enhance the TEDTALKS. If you'd like to contribute, please follow these steps:
+We welcome contributions to enhance the L'Oréal. If you'd like to contribute, please follow these steps:
 
 - **Fork the Repository:** Fork the repository to your GitHub account.
 
