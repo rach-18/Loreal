@@ -26,6 +26,8 @@ Maintain a consistent look and feel with the rest of the cloned website.
 - HTML: For structuring the content of web pages.
 - CSS using Tailwind: For styling and enhancing the visual presentation of the website.
 ## Images:
+![home](https://github.com/rach-18/Loreal/assets/159279737/9a465f96-d754-4bf7-a03b-0058feeb647b)
+
 #### Commitments Section
 #### Home
 
