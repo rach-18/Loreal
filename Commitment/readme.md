@@ -25,6 +25,13 @@ Maintain a consistent look and feel with the rest of the cloned website.
 ## Tech Stack
 - HTML: For structuring the content of web pages.
 - CSS using Tailwind: For styling and enhancing the visual presentation of the website.
+
+## Project Assigned
+- Assigned LOreal UI Clone 
+- Where I have create one page of the loreal website that is Commitments
+- In it there are 5-section with some cards
+- All are about the Loreal Commitments to their customers and what inspired them  
+
 ## Images:
 #### Commitments Section
 #### Home
@@ -40,13 +47,6 @@ Maintain a consistent look and feel with the rest of the cloned website.
 ### Footer
 ![footer](https://github.com/rach-18/Loreal/assets/159279737/f0c5f247-e38d-42a0-a482-ee1ff25da051)
 
-## Project Assigned
-- Assigned LOreal UI Clone 
-- Where I have create one page of the loreal website that is Commitments
-
-- In it there are 5-section with some cards
-
-- All are about the Loreal Commitments to their customers and what inspired them  
 
 ## Acknowledgement
 I would like to express my gratitude to everyone who contributed to the development of the "Commitments" sections of this L'Oréal website project.
@@ -54,7 +54,8 @@ I would like to express my gratitude to everyone who contributed to the developm
 ### Project Contirbutors: 
 *"Deepak kumar"*
 
-#### Project Lead **Rachita Pradhan** 
+#### Project Lead 
+**Rachita Pradhan** 
 Project Lead, responsible for overseeing the development and ensuring alignment with the original L'Oréal website's vision.
 Special Thanks
 We extend our gratitude to the original L'Oréal  website development team for creating an inspiring website that served as the foundation for this project.
@@ -75,5 +76,5 @@ Thank you, [Deepak Kumar] [deedancer951@gmail.com]
 
 ## Demo
 
-Live Demo: https://rach-18.github.io/Loreal/
+Live Demo: https://github.com/rach-18/Loreal/tree/main/Commitment
 
