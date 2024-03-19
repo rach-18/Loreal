@@ -83,26 +83,29 @@ This project was assigned by Geekster as a Major Project for a team of 6 members
 ```
 ## Screenshots
 
-- L'Oréal *Home Page*
+- ### L'Oréal *Home Page*
 ![Screenshot 2024-03-19 132007](https://github.com/rach-18/Loreal/assets/126406002/bb1254e2-3d5c-44ce-ba51-e8f0d7d903fa)
 
-- L'Oréal *Goup Page*
+- ### L'Oréal *Goup Page*
 ![Screenshot 2024-03-19 132029](https://github.com/rach-18/Loreal/assets/126406002/0ada7fc9-ac47-4f32-91a3-fce274f49ee3)
 
-- L'Oréal *Commitments Page*
+- ### L'Oréal *Commitments Page*
 ![image](https://github.com/rach-18/Loreal/assets/126406002/14128f53-60cb-4bcd-b266-88a7f0a1a9fd)
 
-- L'Oréal *Brands Page*
+- ### L'Oréal *Brands Page*
 ![Screenshot 2024-03-19 132115](https://github.com/rach-18/Loreal/assets/126406002/a9c455cc-dbca-4a7e-b374-e7f8443a7644)
 
-- L'Oréal *Beauty Sceince & Technology*
+- ### L'Oréal *Beauty Sceince & Technology*
 ![Screenshot 2024-03-19 132131](https://github.com/rach-18/Loreal/assets/126406002/329d42a5-f213-4e87-9bf4-77c6f5f165cb)
 
-- L'Oréal *Careers Page*
+- ### L'Oréal *Careers Page*
 ![Screenshot 2024-03-19 132146](https://github.com/rach-18/Loreal/assets/126406002/62a41a32-3f64-4de8-b1ec-67bd85d0ffe8)
 
-- L'Oréal *Hamburger*
+- ### L'Oréal *Hamburger*
 ![image](https://github.com/rach-18/Loreal/assets/126406002/83325e7d-0b3b-498f-a4c5-fc5f72a3e790)
+
+- ### L'Oréal *Footer*
+![Screenshot 2024-03-19 115829](https://github.com/rach-18/Loreal/assets/126406002/5c0a855a-b02b-4887-9d9d-b0806eb66e13)
 
 
 ## Technology Used
