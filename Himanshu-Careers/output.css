@@ -2695,10 +2695,6 @@ video {
     display: flex;
   }
 
-  .lg\:h-full {
-    height: 100%;
-  }
-
   .lg\:w-\[100\%\] {
     width: 100%;
   }
@@ -2777,10 +2773,6 @@ video {
 
   .xl\:flex {
     display: flex;
-  }
-
-  .xl\:h-\[90\%\] {
-    height: 90%;
   }
 
   .xl\:w-\[28\%\] {
@@ -2864,10 +2856,6 @@ video {
 @media (min-width: 1536px) {
   .\32xl\:top-\[60\%\] {
     top: 60%;
-  }
-
-  .\32xl\:h-full {
-    height: 100%;
   }
 
   .\32xl\:w-\[60\%\] {
